@@ -15,7 +15,7 @@
 }
 
 (vyos_hosts) {
-  forward . 10.5.0.5:53
+  forward . 127.0.0.1:54
 }
 
 (k8s_gateway) {
@@ -48,4 +48,12 @@ bjw-s.tech {
     fallthrough
   }
   import vyos_hosts
+}
+
+.:54 {
+  import common
+  hosts /host/etc/hosts {
+    ttl 1
+    reload 5s
+  }
 }

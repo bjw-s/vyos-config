@@ -16,20 +16,9 @@ set container name coredns volume config mode 'ro'
 set container name coredns volume corefile destination '/Corefile'
 set container name coredns volume corefile source '/config/containers/coredns/config/Corefile'
 set container name coredns volume corefile mode 'ro'
-
-# coredns - expose vyos hosts file
-set container name coredns-vyos cap-add 'net-bind-service'
-set container name coredns-vyos image 'docker.io/coredns/coredns:1.10.1'
-set container name coredns-vyos memory '0'
-set container name coredns-vyos network services address '10.5.0.5'
-set container name coredns-vyos restart 'on-failure'
-set container name coredns-vyos shared-memory '0'
-set container name coredns-vyos volume corefile destination '/Corefile'
-set container name coredns-vyos volume corefile source '/config/containers/coredns/config-vyos/Corefile'
-set container name coredns-vyos volume corefile mode 'ro'
-set container name coredns-vyos volume vyoshosts destination '/config/vyoshosts'
-set container name coredns-vyos volume vyoshosts source '/etc/hosts'
-set container name coredns-vyos volume vyoshosts mode 'ro'
+set container name coredns volume vyoshosts destination '/host/etc/hosts'
+set container name coredns volume vyoshosts source '/etc/hosts'
+set container name coredns volume vyoshosts mode 'ro'
 
 # dnsdist
 set container name dnsdist cap-add 'net-bind-service'
