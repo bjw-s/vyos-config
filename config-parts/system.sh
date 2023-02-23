@@ -10,7 +10,7 @@ set system login user vyos authentication public-keys ios type 'ssh-ed25519'
 set system login user vyos authentication public-keys personal key 'AAAAC3NzaC1lZDI1NTE5AAAAIMyYn4k4V+myBBl79Nt3t7EZugvz9A+d3ZbKyaP1w7J5'
 set system login user vyos authentication public-keys personal type 'ssh-ed25519'
 
-set system logs logrotate messages
+# set system logs logrotate messages
 
 set system name-server '1.1.1.1'
 

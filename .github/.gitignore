@@ -1,0 +1,10 @@
+# Ignore everything
+/*
+
+# Track certain files and directories
+!.gitignore
+!renovate.json5
+
+!/workflows/
+/workflows/*
+!/workflows/**.yaml

@@ -1,0 +1,23 @@
+(common) {
+  errors
+  log error
+  reload
+  loadbalance
+  cache
+  loop
+  local
+
+  prometheus :9153
+
+  health {
+    lameduck 5s
+  }
+}
+
+. {
+  import common
+  hosts /config/vyoshosts {
+    ttl 1
+    reload 5s
+  }
+}

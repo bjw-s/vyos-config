@@ -1,0 +1,16 @@
+# Ignore everything
+/*
+
+# Track certain files and directories
+!.gitignore
+
+!/config/
+/config/*
+!/config/Corefile
+!/config/hosts-bjw-s.dev
+!/config/hosts-bjw-s.tech
+!/config/hosts-unifi
+
+!/config-vyos/
+/config-vyos/*
+!/config-vyos/Corefile

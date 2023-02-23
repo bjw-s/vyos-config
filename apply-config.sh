@@ -51,6 +51,7 @@ if "$dry_run"; then
   compare
 else
   # Commit and save
+  echo "Committing and saving config"
   commit
   save
 fi

@@ -19,5 +19,5 @@ if mountpoint -q $dest; then
     if [ ! -d "$backup_dest" ]; then
         mkdir "$backup_dest"
     fi
-    tar -zvcf "$backup_dest/unifi-backup.$(date +%Y%m%d%H%M%S).tar.gz" /config/unifi/data/data/backup
+    tar -zvcf "$backup_dest/unifi-backup.$(date +%Y%m%d%H%M%S).tar.gz" /config/containers/unifi/data/backup
 fi

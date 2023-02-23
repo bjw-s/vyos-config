@@ -1,0 +1,51 @@
+(common) {
+  errors
+  log error
+  reload
+  loadbalance
+  cache
+  loop
+  local
+
+  prometheus :9153
+
+  health {
+    lameduck 5s
+  }
+}
+
+(vyos_hosts) {
+  forward . 10.5.0.5:53
+}
+
+(k8s_gateway) {
+  forward . 10.45.0.3:53
+}
+
+unifi {
+  import common
+  hosts /config/hosts-unifi {
+    ttl 1
+    reload 5s
+  }
+}
+
+bjw-s.dev {
+  import common
+  hosts /config/hosts-bjw-s.dev {
+    ttl 1
+    reload 5s
+    fallthrough
+  }
+  import k8s_gateway
+}
+
+bjw-s.tech {
+  import common
+  hosts /config/hosts-bjw-s.tech {
+    ttl 1
+    reload 5s
+    fallthrough
+  }
+  import vyos_hosts
+}

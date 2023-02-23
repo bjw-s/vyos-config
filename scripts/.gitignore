@@ -1,0 +1,13 @@
+# Ignore everything
+/*
+
+# Track certain files and directories
+!.gitignore
+!*.sh
+!*.script
+
+!/commit
+/commit/*
+!/commit/pre-hooks.d
+/commit/pre-hooks.d/*
+!/commit/pre-hooks.d/**.sh

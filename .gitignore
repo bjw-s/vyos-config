@@ -1,31 +1,16 @@
-# Ignore everything except folders
-*
+# Ignore everything
+/*
 
 # Track certain files and directories
 !.gitignore
-!apply-config.sh
-!secrets.sops.env
 !.sops.yaml
+!apply-config.sh
+!secret.sops.env
 
 # VyOS config
 !scripts/
-scripts/*
-!scripts/**.sh
-!scripts/**.script
-
-!scripts/commit
-scripts/commit/*
-!scripts/commit/pre-hooks.d
-scripts/commit/pre-hooks.d/*
-!scripts/commit/pre-hooks.d/**.sh
-
 !config-parts/
-config-parts/*
-!config-parts/*.sh
+!containers/
 
 # CI
 !.github/
-.github/*
-!.github/renovate.json5
-!.github/workflows
-.github/workflows/**.yaml
