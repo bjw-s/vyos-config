@@ -50,6 +50,10 @@ bjw-s.tech {
   import vyos_hosts
 }
 
+1.10.in-addr.arpa {
+  import vyos_hosts
+}
+
 .:54 {
   import common
   hosts /host/etc/hosts {
