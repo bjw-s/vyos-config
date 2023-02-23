@@ -24,7 +24,7 @@
 
 unifi {
   import common
-  hosts /config/hosts-unifi {
+  hosts /config/custom-hosts {
     ttl 1
     reload 5s
   }
@@ -32,7 +32,7 @@ unifi {
 
 bjw-s.dev {
   import common
-  hosts /config/hosts-bjw-s.dev {
+  hosts /config/custom-hosts {
     ttl 1
     reload 5s
     fallthrough
@@ -42,7 +42,7 @@ bjw-s.dev {
 
 bjw-s.tech {
   import common
-  hosts /config/hosts-bjw-s.tech {
+  hosts /config/custom-hosts {
     ttl 1
     reload 5s
     fallthrough

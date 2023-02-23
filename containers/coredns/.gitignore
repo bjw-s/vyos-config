@@ -7,9 +7,7 @@
 !/config/
 /config/*
 !/config/Corefile
-!/config/hosts-bjw-s.dev
-!/config/hosts-bjw-s.tech
-!/config/hosts-unifi
+!/config/custom-hosts
 
 !/config-vyos/
 /config-vyos/*
