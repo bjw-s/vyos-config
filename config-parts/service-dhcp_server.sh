@@ -52,7 +52,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tado-bridge ip-address '10.1.3.23'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tado-bridge mac-address 'ec:e5:12:1b:39:a6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-zigbee-adapter ip-address '10.1.3.46'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-zigbee-adapter mac-address '94:b9:7e:6b:bc:03'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-zigbee-adapter mac-address 'cc:db:a7:48:19:b3'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping horus ip-address '10.1.3.56'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping horus mac-address 'b8:27:eb:b2:09:b0'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping kitchen-coffeemaker ip-address '10.1.3.13'

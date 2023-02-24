@@ -19,5 +19,4 @@ set system sysctl parameter kernel.pty.max value '24000'
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'
 set system task-scheduler task backup-config executable path '/config/scripts/custom-config-backup.sh'
 
-# FIXME: https://github.com/vyos/vyos-1x/pull/1841
-# set system time-zone 'Europe/Amsterdam'
+set system time-zone 'Europe/Amsterdam'

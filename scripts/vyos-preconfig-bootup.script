@@ -8,5 +8,6 @@
 # rm /var/lib/cni/networks/services/10.5.*
 
 # Mount USB Backup Drive
-mkdir -p /media/usb-backup
-mount -t vfat -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-SanDisk_Cruzer_Fit_4C530001300912115421-0:0-part2 /media/usb-backup
+backupdest=/media/usb-backup
+mkdir -p "$backupdest"
+mount -t vfat -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-SanDisk_Cruzer_Fit_4C530001300912115421-0:0-part2 "$backupdest"

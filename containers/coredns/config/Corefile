@@ -14,25 +14,29 @@
   }
 }
 
-(vyos_hosts) {
-  forward . 127.0.0.1:54
-}
-
 (k8s_gateway) {
   forward . 10.45.0.3:53
 }
 
 unifi {
   import common
-  hosts /config/custom-hosts {
+  hosts /host/etc/hosts {
     ttl 1
     reload 5s
   }
 }
 
+# Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
+gateway.bjw-s.tech {
+  import common
+  template IN A gateway.bjw-s.tech {
+    answer "{{ .Name }} 60 IN A 10.1.0.1"
+  }
+}
+
 bjw-s.dev {
   import common
-  hosts /config/custom-hosts {
+  hosts /host/etc/hosts {
     ttl 1
     reload 5s
     fallthrough
@@ -42,20 +46,13 @@ bjw-s.dev {
 
 bjw-s.tech {
   import common
-  hosts /config/custom-hosts {
+  hosts /host/etc/hosts {
     ttl 1
     reload 5s
-    fallthrough
   }
-  import vyos_hosts
 }
 
 1.10.in-addr.arpa {
-  import vyos_hosts
-}
-
-.:54 {
-  import common
   hosts /host/etc/hosts {
     ttl 1
     reload 5s
