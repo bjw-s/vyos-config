@@ -124,7 +124,7 @@ set container name unifi volume data source '/config/containers/unifi'
 # vector-agent
 set container name vector-agent environment VECTOR_CONFIG value '/etc/vector/vector.yaml'
 set container name vector-agent environment VECTOR_WATCH_CONFIG value 'true'
-set container name vector-agent image 'docker.io/timberio/vector:0.27.1-debian'
+set container name vector-agent image 'docker.io/timberio/vector:0.28.0-debian'
 set container name vector-agent memory '0'
 set container name vector-agent network services address '10.5.0.9'
 set container name vector-agent restart 'on-failure'
