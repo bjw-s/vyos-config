@@ -307,6 +307,11 @@ set firewall name local-servers rule 3 action 'accept'
 set firewall name local-servers rule 3 description 'Rule: accept_dns'
 set firewall name local-servers rule 3 destination port 'domain,domain-s'
 set firewall name local-servers rule 3 protocol 'tcp_udp'
+set firewall name local-servers rule 4 action 'accept'
+set firewall name local-servers rule 4 description 'Rule: accept_vector_syslog'
+set firewall name local-servers rule 4 destination group address-group 'k8s_vector_aggregator'
+set firewall name local-servers rule 4 destination port '6001'
+set firewall name local-servers rule 4 protocol 'tcp'
 
 # From LOCAL to SERVICES
 set firewall name local-services default-action 'accept'
