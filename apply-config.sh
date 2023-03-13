@@ -52,7 +52,7 @@ if "$dry_run"; then
   # Show what's different from the running config
   compare
 else
-  # Pull container images
+  # Pull new container images
   AVAILABLE_IMAGES=($(run show container image | awk '{ if ( NR > 1  ) { print $1 ":" $2} }'))
   CONFIG_IMAGES=($(sed -nr "s/set container name .* image '(.*)'/\1/p" /config/config-parts/* | uniq))
 
@@ -68,6 +68,21 @@ else
   echo "Committing and saving config"
   commit
   save
+
+  # Clean obsolete container images
+  IFS=$'\n' read -rd '' -a AVAILABLE_IMAGES <<<"$(run show container image | tail -n +2)"
+  for image in "${AVAILABLE_IMAGES[@]}"
+  do
+    image_name=$(echo "${image}" | awk '{ print $1 }')
+    image_tag=$(echo "${image}" | awk '{ print $2 }')
+    image_id=$(echo "${image}" | awk '{ print $3 }')
+    image_name_tag="${image_name}:${image_tag}"
+
+    if [[ ! " ${CONFIG_IMAGES[*]} " =~ " ${image_name_tag} " ]]; then
+      echo "Removing container ${image_name_tag}"
+      run delete container image "${image_id}"
+    fi
+  done
 fi
 
 exit
