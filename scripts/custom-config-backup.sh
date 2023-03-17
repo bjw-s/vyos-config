@@ -20,4 +20,7 @@ if mountpoint -q $dest; then
         mkdir "$backup_dest"
     fi
     tar -zvcf "$backup_dest/unifi-backup.$(date +%Y%m%d%H%M%S).tar.gz" /config/containers/unifi/data/backup
+
+    # Delete backups older than 1 month
+    find $dest -type f -mtime +30 -delete
 fi
