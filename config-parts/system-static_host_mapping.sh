@@ -26,3 +26,8 @@ set system static-host-mapping host-name diego.bjw-s.tech alias pikvm.bjw-s.tech
 set system static-host-mapping host-name horus.bjw-s.tech inet 10.1.1.51
 
 set system static-host-mapping host-name driveway-camera-doorbell.bjw-s.tech inet 10.1.4.12
+set system static-host-mapping host-name hallway-zigbee-adapter.bjw-s.tech inet 10.1.3.46
+set system static-host-mapping host-name garage-tablet.bjw-s.tech inet 10.1.3.54
+set system static-host-mapping host-name hallway-tablet.bjw-s.tech inet 10.1.3.53
+set system static-host-mapping host-name livingroom-vacuum.bjw-s.tech inet 10.1.3.18
+set system static-host-mapping host-name upstairs-vacuum.bjw-s.tech inet 10.1.3.22

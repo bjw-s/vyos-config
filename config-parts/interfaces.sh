@@ -2,11 +2,11 @@
 
 set interfaces ethernet eth0 address 'dhcp'
 set interfaces ethernet eth0 description 'WAN'
-set interfaces ethernet eth0 hw-id '00:f4:21:68:3e:9c'
+set interfaces ethernet eth0 hw-id 'e4:3a:6e:5f:33:9c'
 
 set interfaces ethernet eth1 address '10.1.0.1/24'
 set interfaces ethernet eth1 description 'LAN'
-set interfaces ethernet eth1 hw-id '00:f4:21:68:3e:9d'
+set interfaces ethernet eth1 hw-id 'e4:3a:6e:5f:33:9d'
 set interfaces ethernet eth1 vif 10 address '10.1.1.1/24'
 set interfaces ethernet eth1 vif 10 description 'SERVERS'
 set interfaces ethernet eth1 vif 20 address '10.1.2.1/24'
@@ -18,10 +18,10 @@ set interfaces ethernet eth1 vif 40 description 'IOT'
 set interfaces ethernet eth1 vif 50 address '10.1.4.1/24'
 set interfaces ethernet eth1 vif 50 description 'VIDEO'
 
-set interfaces ethernet eth2 hw-id '00:f4:21:68:3e:9e'
-set interfaces ethernet eth3 hw-id '00:f4:21:68:3e:9f'
-set interfaces ethernet eth4 hw-id '00:f4:21:68:3e:a0'
-set interfaces ethernet eth5 hw-id '00:f4:21:68:3e:a1'
+set interfaces ethernet eth2 hw-id 'e4:3a:6e:5f:33:9e'
+set interfaces ethernet eth3 hw-id 'e4:3a:6e:5f:33:9f'
+set interfaces ethernet eth4 hw-id 'e4:3a:6e:5f:33:a0'
+set interfaces ethernet eth5 hw-id 'e4:3a:6e:5f:33:a1'
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'
@@ -36,6 +36,3 @@ set interfaces wireguard wg01 peer macbook-bernd persistent-keepalive '15'
 set interfaces wireguard wg01 peer macbook-bernd public-key 'iWKTc88fDBhqlsAgoCXYvkBdf9wG4YBZ8XTg/+0Ln2I='
 set interfaces wireguard wg01 port '51820'
 set interfaces wireguard wg01 private-key "${SECRET_WIREGUARD_PRIVATE_KEY}"
-
-set interfaces wireless wlan0 hw-id '1c:4b:d6:81:6d:73'
-set interfaces wireless wlan0 physical-device 'phy0'
