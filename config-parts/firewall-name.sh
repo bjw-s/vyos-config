@@ -484,7 +484,7 @@ set firewall name services-local rule 2 destination port '67,68'
 set firewall name services-local rule 2 protocol 'udp'
 set firewall name services-local rule 2 source port '67,68'
 
-# From SERVICES to SERVICES
+# From SERVICES to SERVERS
 set firewall name services-servers default-action 'accept'
 set firewall name services-servers description 'From SERVICES to SERVERS'
 set firewall name services-servers rule 1 action 'accept'
