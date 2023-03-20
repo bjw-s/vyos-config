@@ -3,9 +3,8 @@
 
 # Track certain files and directories
 !.gitignore
-!.sops.yaml
-!apply-config.sh
-!secret.sops.env
+!/.sops.yaml
+!/apply-config.sh
 
 # VyOS config
 !scripts/
