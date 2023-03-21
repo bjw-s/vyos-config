@@ -5,6 +5,7 @@
 !.gitignore
 !/.sops.yaml
 !/apply-config.sh
+!/LICENSE
 
 # VyOS config
 !scripts/
