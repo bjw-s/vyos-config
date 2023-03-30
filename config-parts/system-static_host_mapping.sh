@@ -9,7 +9,7 @@ set system static-host-mapping host-name unifi inet 10.5.0.10
 # NAS
 set system static-host-mapping host-name librarium.bjw-s.tech inet 10.1.1.11
 set system static-host-mapping host-name librarium.bjw-s.tech alias nas.bjw-s.tech
-set system static-host-mapping host-name librarium.bjw-s.tech alias garage.bjw-s.dev
+set system static-host-mapping host-name librarium.bjw-s.tech alias minio.bjw-s.dev
 set system static-host-mapping host-name librarium.bjw-s.tech alias s3.bjw-s.dev
 
 # Kubernetes hosts
