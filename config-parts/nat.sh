@@ -32,6 +32,7 @@ set nat destination rule 103 protocol 'tcp_udp'
 set nat destination rule 103 translation address '10.5.0.4'
 set nat destination rule 103 translation port '53'
 
+# Force NTP
 set nat destination rule 104 description 'Force NTP for LAN'
 set nat destination rule 104 destination address '!10.1.0.1'
 set nat destination rule 104 destination port '123'
@@ -40,7 +41,6 @@ set nat destination rule 104 protocol 'udp'
 set nat destination rule 104 translation address '10.1.0.1'
 set nat destination rule 104 translation port '123'
 
-# Force NTP
 set nat destination rule 105 description 'Force NTP for Servers'
 set nat destination rule 105 destination address '!10.1.1.1'
 set nat destination rule 105 destination port '123'
