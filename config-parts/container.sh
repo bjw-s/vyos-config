@@ -77,7 +77,7 @@ set container name node-exporter volume sysfs source '/sys'
 # speedtest-exporter
 set container name speedtest-exporter image 'ghcr.io/miguelndecarvalho/speedtest-exporter:v3.5.3'
 set container name speedtest-exporter memory '0'
-set container name node-exporter allow-host-networks
+set container name speedtest-exporter allow-host-networks
 set container name speedtest-exporter restart 'on-failure'
 set container name speedtest-exporter shared-memory '0'
 
