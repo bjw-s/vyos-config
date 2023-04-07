@@ -1,7 +1,7 @@
 #!/bin/vbash
 
-set interfaces ethernet eth0 address 'dhcp'
-set interfaces ethernet eth0 description 'WAN'
+# set interfaces ethernet eth0 address 'dhcp'
+# set interfaces ethernet eth0 description 'WAN'
 set interfaces ethernet eth0 hw-id 'e4:3a:6e:5f:33:9c'
 
 set interfaces ethernet eth1 address '10.1.0.1/24'
@@ -21,7 +21,10 @@ set interfaces ethernet eth1 vif 50 description 'VIDEO'
 set interfaces ethernet eth2 hw-id 'e4:3a:6e:5f:33:9e'
 set interfaces ethernet eth3 hw-id 'e4:3a:6e:5f:33:9f'
 set interfaces ethernet eth4 hw-id 'e4:3a:6e:5f:33:a0'
+
 set interfaces ethernet eth5 hw-id 'e4:3a:6e:5f:33:a1'
+set interfaces ethernet eth5 description 'WAN'
+set interfaces ethernet eth5 address 'dhcp'
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'
