@@ -4,7 +4,7 @@
 # services not available through the VyOS CLI system can be placed here.
 
 # Add dotfiles for home directory
-tee /home/vyos/.gitconfig <<END
+tee /home/vyos/.gitconfig <<END >/dev/null
 [init]
   defaultBranch = main
 [safe]
@@ -13,12 +13,17 @@ tee /home/vyos/.gitconfig <<END
   email = me@bjw-s.dev
   name = Bernd Schorgers
 END
-#
-tee -a /home/vyos/.bash_aliases <<END
+
+tee -a /home/vyos/.bash_aliases <<END >/dev/null
 export SOPS_AGE_KEY_FILE=/config/secrets/age.key
 export GIT_SSH_COMMAND="ssh -i /config/secrets/id_ed25519"
 export VISUAL=nano
 export EDITOR=nano
 alias podman="sudo podman"
 END
-#
+
+# Disable EEE on network interfaces as a workaround to i225/i226 issues
+while read -r interface
+do
+  sudo ethtool --set-eee "${interface}" eee off
+done < <(ls -l /sys/class/net/*/device/driver/module | cut -d/ -f5)
