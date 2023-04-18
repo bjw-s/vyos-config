@@ -75,6 +75,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping livingroom-nintendo-switch mac-address '98:41:5c:b2:98:2e'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping livingroom-receiver-sonos ip-address '10.1.3.66'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping livingroom-receiver-sonos mac-address 'b8:e9:37:9b:f5:c6'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping livingroom-sonos-move ip-address '10.1.3.67'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping livingroom-sonos-move mac-address 'c4:38:75:25:83:76'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping manyie-ereader ip-address '10.1.3.52'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping manyie-ereader mac-address '58:b0:d4:67:f5:74'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping spare-p1eu-1 ip-address '10.1.3.34'
