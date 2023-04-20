@@ -1,6 +1,8 @@
 (common) {
   errors
-  log error
+  log . {
+    class error
+  }
   reload
   loadbalance
   cache
@@ -26,7 +28,7 @@ unifi {
   }
 }
 
-# Hack to prevent the gatway returning 127.0.0.1 from /etc/hosts
+# Hack to prevent the gateway returning 127.0.0.1 from /etc/hosts
 gateway.bjw-s.tech {
   import common
   template IN A gateway.bjw-s.tech {
@@ -44,15 +46,8 @@ bjw-s.dev {
   import k8s_gateway
 }
 
-bjw-s.tech {
+. {
   import common
-  hosts /host/etc/hosts {
-    ttl 1
-    reload 5s
-  }
-}
-
-1.10.in-addr.arpa {
   hosts /host/etc/hosts {
     ttl 1
     reload 5s
