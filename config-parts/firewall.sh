@@ -107,8 +107,6 @@ set firewall group address-group unifi_devices address '10.1.0.24'
 set firewall group address-group vector_journald_allowed address '10.1.3.56'
 set firewall group address-group vector_journald_allowed address '10.1.3.60'
 
-set firewall group address-group vyos_chronyd address '10.5.0.5'
-
 set firewall group address-group vyos_coredns address '10.5.0.3'
 
 set firewall group address-group vyos_dnsdist address '10.5.0.4'

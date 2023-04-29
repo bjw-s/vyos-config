@@ -6,6 +6,9 @@ set system static-host-mapping host-name gateway.bjw-s.tech alias ipv4.bjw-s.dev
 # Unifi controller
 set system static-host-mapping host-name unifi inet 10.5.0.10
 
+# 1Password Connect
+set system static-host-mapping host-name onepassword-connect.bjw-s.dev inet 10.5.0.5
+
 # NAS
 set system static-host-mapping host-name librarium.bjw-s.tech inet 10.1.1.11
 set system static-host-mapping host-name librarium.bjw-s.tech alias nas.bjw-s.tech
