@@ -42,4 +42,3 @@ cluster-0                  IN  A  10.5.0.2
 ; CNAME records
 nas                        IN  CNAME  librarium.bjw-s.tech.
 pikvm                      IN  CNAME  diego.bjw-s.tech.
-s3                         IN  CNAME  gateway.bjw-s.tech.
