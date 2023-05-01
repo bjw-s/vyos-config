@@ -6,9 +6,8 @@
 
 !/config/
 /config/*
-!/config/Corefile
-!/config/custom-hosts
 
-!/config-vyos/
-/config-vyos/*
-!/config-vyos/Corefile
+!/config/named.conf
+!/config/zones/
+/config/zones/*
+!/config/zones/db.*

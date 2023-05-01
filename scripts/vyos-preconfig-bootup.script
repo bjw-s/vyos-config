@@ -7,6 +7,13 @@
 # Clean dangling container network files
 # rm /var/lib/cni/networks/services/10.5.*
 
+# Fix for containers requiring a custom user/group id
+# and Vyos not preserving file perms on upgrade
+mkdir -p /tmp/onepassword/data
+chown -R 999 /tmp/onepassword/data
+mkdir -p /tmp/bind/cache
+chown -R 104 /tmp/bind/cache
+
 # Mount USB Backup Drive
 backupdest=/media/usb-backup
 mkdir -p "$backupdest"

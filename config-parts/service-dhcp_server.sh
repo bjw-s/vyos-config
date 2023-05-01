@@ -1,8 +1,5 @@
 #!/bin/vbash
 
-set service dhcp-server hostfile-update
-set service dhcp-server host-decl-name
-
 # Guest VLAN
 set service dhcp-server shared-network-name GUEST authoritative
 set service dhcp-server shared-network-name GUEST ping-check

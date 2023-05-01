@@ -1,0 +1,40 @@
+; Make sure to update the epoch time in the SOA records so coreDNS picks up the changes automatically
+; https://www.epochconverter.com/
+
+; SOA Records
+$TTL 3600
+$ORIGIN 1.10.in-addr.arpa.
+@ 3600 IN SOA gateway.bjw-s.tech. gateway.bjw-s.tech. (
+  1682790096         ; serial number (epoch timestamp)
+  7200               ; refresh period
+  3600               ; retry period
+  1209600            ; expire time
+  3600               ; minimum ttl
+)
+
+; NS Records
+@                          IN  NS gateway.bjw-s.tech.
+
+; Reset origin
+$ORIGIN in-addr.arpa.
+
+; LAN
+1.0.1.10                   IN  PTR  gateway.bjw-s.tech.
+
+; Servers
+11.1.1.10                  IN  PTR  librarium.bjw-s.tech.
+31.1.1.10                  IN  PTR  delta.bjw-s.tech.
+32.1.1.10                  IN  PTR  enigma.bjw-s.tech.
+33.1.1.10                  IN  PTR  felix.bjw-s.tech.
+51.1.1.10                  IN  PTR  horus.bjw-s.tech.
+52.1.1.10                  IN  PTR  diego.bjw-s.tech.
+
+; IOT
+18.3.1.10                  IN  PTR  livingroom-vacuum.bjw-s.tech.
+22.3.1.10                  IN  PTR  upstairs-vacuum.bjw-s.tech.
+46.3.1.10                  IN  PTR  hallway-zigbee-adapter.bjw-s.tech.
+53.3.1.10                  IN  PTR  hallway-tablet.bjw-s.tech.
+54.3.1.10                  IN  PTR  garage-tablet.bjw-s.tech.
+
+; Video
+12.4.1.10                  IN  PTR  driveway-camera-doorbell.bjw-s.tech.
