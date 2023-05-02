@@ -45,7 +45,7 @@ set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
 
 # haproxy-k8s-api
-set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.7'
+set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.8'
 set container name haproxy-k8s-api memory '0'
 set container name haproxy-k8s-api network services address '10.5.0.2'
 set container name haproxy-k8s-api restart 'on-failure'
