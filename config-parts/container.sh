@@ -122,7 +122,7 @@ set container name unifi volume data destination '/unifi'
 set container name unifi volume data mode 'rw'
 
 # onepassword-connect
-set container name onepassword-connect image 'docker.io/1password/connect-api:1.6.1'
+set container name onepassword-connect image 'docker.io/1password/connect-api:1.7.0'
 set container name onepassword-connect environment TZ value 'Europe/Amsterdam'
 set container name onepassword-connect memory '0'
 set container name onepassword-connect network services address '10.5.0.5'
@@ -135,7 +135,7 @@ set container name onepassword-connect volume data destination '/home/opuser/.op
 set container name onepassword-connect volume data mode 'rw'
 
 # onepassword-sync
-set container name onepassword-sync image 'docker.io/1password/connect-sync:1.6.1'
+set container name onepassword-sync image 'docker.io/1password/connect-sync:1.7.0'
 set container name onepassword-sync environment TZ value 'Europe/Amsterdam'
 set container name onepassword-sync memory '0'
 set container name onepassword-sync shared-memory '0'
