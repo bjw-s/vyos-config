@@ -27,6 +27,7 @@ horus                      IN  A  10.1.1.51
 diego                      IN  A  10.1.1.52
 
 ; IOT
+livingroom-shield          IN  A  10.1.3.16
 livingroom-vacuum          IN  A  10.1.3.18
 upstairs-vacuum            IN  A  10.1.3.22
 hallway-zigbee-adapter     IN  A  10.1.3.46

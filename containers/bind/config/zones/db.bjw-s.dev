@@ -20,3 +20,4 @@ onepassword-connect        IN  A 10.5.0.5
 
 ; CNAME Records
 s3                         IN  CNAME nas.bjw-s.tech.
+vpn                        IN  CNAME gateway.bjw-s.tech.

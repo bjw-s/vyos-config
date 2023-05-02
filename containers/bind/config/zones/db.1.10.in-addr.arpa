@@ -30,6 +30,7 @@ $ORIGIN in-addr.arpa.
 52.1.1.10                  IN  PTR  diego.bjw-s.tech.
 
 ; IOT
+16.3.1.10                  IN  PTR  livingroom-shield.bjw-s.tech.
 18.3.1.10                  IN  PTR  livingroom-vacuum.bjw-s.tech.
 22.3.1.10                  IN  PTR  upstairs-vacuum.bjw-s.tech.
 46.3.1.10                  IN  PTR  hallway-zigbee-adapter.bjw-s.tech.
