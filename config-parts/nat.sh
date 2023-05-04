@@ -1,22 +1,5 @@
 #!/bin/vbash
 
-# Forward HTTP(S) to ingress
-set nat destination rule 100 description 'HTTPS'
-set nat destination rule 100 destination port '443'
-# set nat destination rule 100 inbound-interface 'eth0'
-set nat destination rule 100 inbound-interface 'eth5'
-set nat destination rule 100 protocol 'tcp'
-set nat destination rule 100 translation address '10.45.0.1'
-set nat destination rule 100 translation port '443'
-
-set nat destination rule 101 description 'HTTP'
-set nat destination rule 101 destination port '80'
-# set nat destination rule 101 inbound-interface 'eth0'
-set nat destination rule 101 inbound-interface 'eth5'
-set nat destination rule 101 protocol 'tcp'
-set nat destination rule 101 translation address '10.45.0.1'
-set nat destination rule 101 translation port '80'
-
 # Force DNS
 set nat destination rule 102 description 'Force DNS for IoT'
 set nat destination rule 102 destination address '!10.5.0.4'
