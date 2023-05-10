@@ -13,33 +13,34 @@ $ORIGIN bjw-s.tech.
 )
 
 ; NS Records
-@                          IN  NS gateway.bjw-s.tech.
+@                             IN  NS gateway.bjw-s.tech.
 
 ; LAN
-gateway                    IN  A  10.1.0.1
+gateway                       IN  A  10.1.0.1
 
 ; Servers
-librarium                  IN  A  10.1.1.11
-delta                      IN  A  10.1.1.31
-enigma                     IN  A  10.1.1.32
-felix                      IN  A  10.1.1.33
-horus                      IN  A  10.1.1.51
-diego                      IN  A  10.1.1.52
+librarium                     IN  A  10.1.1.11
+delta                         IN  A  10.1.1.31
+enigma                        IN  A  10.1.1.32
+felix                         IN  A  10.1.1.33
+horus                         IN  A  10.1.1.51
+diego                         IN  A  10.1.1.52
 
 ; IOT
-livingroom-shield          IN  A  10.1.3.16
-livingroom-vacuum          IN  A  10.1.3.18
-upstairs-vacuum            IN  A  10.1.3.22
-hallway-zigbee-adapter     IN  A  10.1.3.46
-hallway-tablet             IN  A  10.1.3.53
-garage-tablet              IN  A  10.1.3.54
+livingroom-shield             IN  A  10.1.3.16
+livingroom-vacuum             IN  A  10.1.3.18
+upstairs-vacuum               IN  A  10.1.3.22
+attic-office-3dprinter-plug   IN  A  10.1.3.33
+hallway-zigbee-adapter        IN  A  10.1.3.46
+hallway-tablet                IN  A  10.1.3.53
+garage-tablet                 IN  A  10.1.3.54
 
 ; Video
-driveway-camera-doorbell   IN  A  10.1.4.12
+driveway-camera-doorbell      IN  A  10.1.4.12
 
 ; Services
-cluster-0                  IN  A  10.5.0.2
+cluster-0                     IN  A  10.5.0.2
 
 ; CNAME records
-nas                        IN  CNAME  librarium.bjw-s.tech.
-pikvm                      IN  CNAME  diego.bjw-s.tech.
+nas                           IN  CNAME  librarium.bjw-s.tech.
+pikvm                         IN  CNAME  diego.bjw-s.tech.
