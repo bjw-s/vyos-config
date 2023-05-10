@@ -642,6 +642,12 @@ set firewall name video-local rule 2 source port '67,68'
 set firewall name video-servers default-action 'drop'
 set firewall name video-servers description 'From VIDEO to SERVERS'
 set firewall name video-servers enable-default-log
+set firewall name video-servers rule 1 action 'accept'
+set firewall name video-servers rule 1 description 'Rule: accept_hass_ingress_from_allowed_devices'
+set firewall name video-servers rule 1 destination group address-group 'k8s_hass'
+set firewall name video-servers rule 1 destination port '8123'
+set firewall name video-servers rule 1 protocol 'tcp'
+set firewall name video-servers rule 1 source group address-group 'hass_clients'
 
 # From VIDEO to SERVICES
 set firewall name video-services default-action 'accept'

@@ -124,7 +124,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 s
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta ip-address '10.1.1.31'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta mac-address '00:e0:4c:68:02:b1'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta mac-address '94:c6:91:a6:84:87'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping enigma ip-address '10.1.1.32'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping enigma mac-address '00:e0:4c:68:18:2d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping felix ip-address '10.1.1.33'
@@ -175,4 +175,4 @@ set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 range 0 sta
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 range 0 stop '10.1.4.254'
 
 set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping driveway-camera-doorbell ip-address '10.1.4.12'
-set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping driveway-camera-doorbell mac-address '9c:8e:cd:30:a1:e6'
+set service dhcp-server shared-network-name VIDEO subnet 10.1.4.0/24 static-mapping driveway-camera-doorbell mac-address 'ec:71:db:88:50:f8'
