@@ -38,13 +38,13 @@ set firewall name guest-servers description 'From GUEST to SERVERS'
 set firewall name guest-servers enable-default-log
 
 # From GUEST to SERVICES
-set firewall name guest-services default-action 'drop'
-set firewall name guest-services description 'From GUEST to SERVICES'
-set firewall name guest-services enable-default-log
-set firewall name guest-services rule 1 action 'accept'
-set firewall name guest-services rule 1 description 'Rule: accept_dns'
-set firewall name guest-services rule 1 destination port 'domain,domain-s'
-set firewall name guest-services rule 1 protocol 'tcp_udp'
+set firewall name guest-containers default-action 'drop'
+set firewall name guest-containers description 'From GUEST to SERVICES'
+set firewall name guest-containers enable-default-log
+set firewall name guest-containers rule 1 action 'accept'
+set firewall name guest-containers rule 1 description 'Rule: accept_dns'
+set firewall name guest-containers rule 1 destination port 'domain,domain-s'
+set firewall name guest-containers rule 1 protocol 'tcp_udp'
 
 # From GUEST to TRUSTED
 set firewall name guest-trusted default-action 'drop'
@@ -172,12 +172,12 @@ set firewall name iot-servers rule 10 protocol 'tcp'
 set firewall name iot-servers rule 10 source group address-group 'vector_journald_allowed'
 
 # From IOT to SERVICES
-set firewall name iot-services default-action 'accept'
-set firewall name iot-services description 'From IOT to SERVICES'
-set firewall name iot-services rule 1 action 'accept'
-set firewall name iot-services rule 1 description 'Rule: accept_dns'
-set firewall name iot-services rule 1 destination port 'domain,domain-s'
-set firewall name iot-services rule 1 protocol 'tcp_udp'
+set firewall name iot-containers default-action 'accept'
+set firewall name iot-containers description 'From IOT to SERVICES'
+set firewall name iot-containers rule 1 action 'accept'
+set firewall name iot-containers rule 1 description 'Rule: accept_dns'
+set firewall name iot-containers rule 1 destination port 'domain,domain-s'
+set firewall name iot-containers rule 1 protocol 'tcp_udp'
 
 # From IOT to TRUSTED
 set firewall name iot-trusted default-action 'drop'
@@ -242,12 +242,12 @@ set firewall name lan-servers rule 1 description 'Rule: accept_icmp'
 set firewall name lan-servers rule 1 protocol 'icmp'
 
 # From LAN to SERVICES
-set firewall name lan-services default-action 'accept'
-set firewall name lan-services description 'From LAN to SERVICES'
-set firewall name lan-services rule 1 action 'accept'
-set firewall name lan-services rule 1 description 'Rule: accept_dns'
-set firewall name lan-services rule 1 destination port 'domain,domain-s'
-set firewall name lan-services rule 1 protocol 'tcp_udp'
+set firewall name lan-containers default-action 'accept'
+set firewall name lan-containers description 'From LAN to SERVICES'
+set firewall name lan-containers rule 1 action 'accept'
+set firewall name lan-containers rule 1 description 'Rule: accept_dns'
+set firewall name lan-containers rule 1 destination port 'domain,domain-s'
+set firewall name lan-containers rule 1 protocol 'tcp_udp'
 
 # From LAN to TRUSTED
 set firewall name lan-trusted default-action 'drop'
@@ -314,12 +314,12 @@ set firewall name local-servers rule 4 destination port '6001'
 set firewall name local-servers rule 4 protocol 'tcp'
 
 # From LOCAL to SERVICES
-set firewall name local-services default-action 'accept'
-set firewall name local-services description 'From LOCAL to SERVICES'
-set firewall name local-services rule 1 action 'accept'
-set firewall name local-services rule 1 description 'Rule: accept_dns'
-set firewall name local-services rule 1 destination port 'domain,domain-s'
-set firewall name local-services rule 1 protocol 'tcp_udp'
+set firewall name local-containers default-action 'accept'
+set firewall name local-containers description 'From LOCAL to SERVICES'
+set firewall name local-containers rule 1 action 'accept'
+set firewall name local-containers rule 1 description 'Rule: accept_dns'
+set firewall name local-containers rule 1 destination port 'domain,domain-s'
+set firewall name local-containers rule 1 protocol 'tcp_udp'
 
 # From LOCAL to TRUSTED
 set firewall name local-trusted default-action 'drop'
@@ -425,17 +425,17 @@ set firewall name servers-local rule 7 protocol 'tcp'
 set firewall name servers-local rule 7 source group address-group 'k8s_nodes'
 
 # From SERVERS to SERVICES
-set firewall name servers-services default-action 'accept'
-set firewall name servers-services description 'From SERVERS to SERVICES'
-set firewall name servers-services enable-default-log
-set firewall name servers-services rule 1 action 'accept'
-set firewall name servers-services rule 1 description 'Rule: accept_dns'
-set firewall name servers-services rule 1 destination port 'domain,domain-s'
-set firewall name servers-services rule 1 protocol 'tcp_udp'
-set firewall name servers-services rule 2 action 'accept'
-set firewall name servers-services rule 2 description 'Rule: accept_k8s_api'
-set firewall name servers-services rule 2 destination port '6443'
-set firewall name servers-services rule 2 protocol 'tcp'
+set firewall name servers-containers default-action 'accept'
+set firewall name servers-containers description 'From SERVERS to SERVICES'
+set firewall name servers-containers enable-default-log
+set firewall name servers-containers rule 1 action 'accept'
+set firewall name servers-containers rule 1 description 'Rule: accept_dns'
+set firewall name servers-containers rule 1 destination port 'domain,domain-s'
+set firewall name servers-containers rule 1 protocol 'tcp_udp'
+set firewall name servers-containers rule 2 action 'accept'
+set firewall name servers-containers rule 2 description 'Rule: accept_k8s_api'
+set firewall name servers-containers rule 2 destination port '6443'
+set firewall name servers-containers rule 2 protocol 'tcp'
 
 # From SERVERS to TRUSTED
 set firewall name servers-trusted default-action 'drop'
@@ -461,54 +461,54 @@ set firewall name servers-wan default-action 'accept'
 set firewall name servers-wan description 'From SERVERS to WAN'
 
 # From SERVICES to GUEST
-set firewall name services-guest default-action 'drop'
-set firewall name services-guest description 'From SERVICES to GUEST'
-set firewall name services-guest enable-default-log
+set firewall name containers-guest default-action 'drop'
+set firewall name containers-guest description 'From SERVICES to GUEST'
+set firewall name containers-guest enable-default-log
 
 # From SERVICES to IOT
-set firewall name services-iot default-action 'drop'
-set firewall name services-iot description 'From SERVICES to IOT'
-set firewall name services-iot enable-default-log
+set firewall name containers-iot default-action 'drop'
+set firewall name containers-iot description 'From SERVICES to IOT'
+set firewall name containers-iot enable-default-log
 
 # From SERVICES to LAN
-set firewall name services-lan default-action 'drop'
-set firewall name services-lan description 'From SERVICES to LAN'
-set firewall name services-lan enable-default-log
+set firewall name containers-lan default-action 'drop'
+set firewall name containers-lan description 'From SERVICES to LAN'
+set firewall name containers-lan enable-default-log
 
 # From SERVICES to LOCAL
-set firewall name services-local default-action 'drop'
-set firewall name services-local description 'From SERVICES to LOCAL'
-set firewall name services-local enable-default-log
-set firewall name services-local rule 1 action 'accept'
-set firewall name services-local rule 1 description 'Rule: accept_ntp'
-set firewall name services-local rule 1 destination port 'ntp'
-set firewall name services-local rule 1 protocol 'udp'
-set firewall name services-local rule 2 action 'accept'
-set firewall name services-local rule 2 description 'Rule: accept_dhcp'
-set firewall name services-local rule 2 destination port '67,68'
-set firewall name services-local rule 2 protocol 'udp'
-set firewall name services-local rule 2 source port '67,68'
+set firewall name containers-local default-action 'drop'
+set firewall name containers-local description 'From SERVICES to LOCAL'
+set firewall name containers-local enable-default-log
+set firewall name containers-local rule 1 action 'accept'
+set firewall name containers-local rule 1 description 'Rule: accept_ntp'
+set firewall name containers-local rule 1 destination port 'ntp'
+set firewall name containers-local rule 1 protocol 'udp'
+set firewall name containers-local rule 2 action 'accept'
+set firewall name containers-local rule 2 description 'Rule: accept_dhcp'
+set firewall name containers-local rule 2 destination port '67,68'
+set firewall name containers-local rule 2 protocol 'udp'
+set firewall name containers-local rule 2 source port '67,68'
 
 # From SERVICES to SERVERS
-set firewall name services-servers default-action 'accept'
-set firewall name services-servers description 'From SERVICES to SERVERS'
-set firewall name services-servers rule 1 action 'accept'
-set firewall name services-servers rule 1 description 'Rule: accept_icmp'
-set firewall name services-servers rule 1 protocol 'icmp'
+set firewall name containers-servers default-action 'accept'
+set firewall name containers-servers description 'From SERVICES to SERVERS'
+set firewall name containers-servers rule 1 action 'accept'
+set firewall name containers-servers rule 1 description 'Rule: accept_icmp'
+set firewall name containers-servers rule 1 protocol 'icmp'
 
 # From SERVICES to TRUSTED
-set firewall name services-trusted default-action 'drop'
-set firewall name services-trusted description 'From SERVICES to TRUSTED'
-set firewall name services-trusted enable-default-log
+set firewall name containers-trusted default-action 'drop'
+set firewall name containers-trusted description 'From SERVICES to TRUSTED'
+set firewall name containers-trusted enable-default-log
 
 # From SERVICES to VIDEO
-set firewall name services-video default-action 'drop'
-set firewall name services-video description 'From SERVICES to VIDEO'
-set firewall name services-video enable-default-log
+set firewall name containers-video default-action 'drop'
+set firewall name containers-video description 'From SERVICES to VIDEO'
+set firewall name containers-video enable-default-log
 
 # From SERVICES to WAN
-set firewall name services-wan default-action 'accept'
-set firewall name services-wan description 'From SERVICES to WAN'
+set firewall name containers-wan default-action 'accept'
+set firewall name containers-wan description 'From SERVICES to WAN'
 
 # From TRUSTED to GUEST
 set firewall name trusted-guest default-action 'drop'
@@ -591,12 +591,12 @@ set firewall name trusted-servers rule 1 description 'Rule: accept_icmp'
 set firewall name trusted-servers rule 1 protocol 'icmp'
 
 # From TRUSTED to SERVICES
-set firewall name trusted-services default-action 'accept'
-set firewall name trusted-services description 'From TRUSTED to SERVICES'
-set firewall name trusted-services rule 1 action 'accept'
-set firewall name trusted-services rule 1 description 'Rule: accept_dns'
-set firewall name trusted-services rule 1 destination port 'domain,domain-s'
-set firewall name trusted-services rule 1 protocol 'tcp_udp'
+set firewall name trusted-containers default-action 'accept'
+set firewall name trusted-containers description 'From TRUSTED to SERVICES'
+set firewall name trusted-containers rule 1 action 'accept'
+set firewall name trusted-containers rule 1 description 'Rule: accept_dns'
+set firewall name trusted-containers rule 1 destination port 'domain,domain-s'
+set firewall name trusted-containers rule 1 protocol 'tcp_udp'
 
 # From TRUSTED to VIDEO
 set firewall name trusted-video default-action 'accept'
@@ -650,12 +650,12 @@ set firewall name video-servers rule 1 protocol 'tcp'
 set firewall name video-servers rule 1 source group address-group 'hass_clients'
 
 # From VIDEO to SERVICES
-set firewall name video-services default-action 'accept'
-set firewall name video-services description 'From VIDEO to SERVICES'
-set firewall name video-services rule 1 action 'accept'
-set firewall name video-services rule 1 description 'Rule: accept_dns'
-set firewall name video-services rule 1 destination port 'domain,domain-s'
-set firewall name video-services rule 1 protocol 'tcp_udp'
+set firewall name video-containers default-action 'accept'
+set firewall name video-containers description 'From VIDEO to SERVICES'
+set firewall name video-containers rule 1 action 'accept'
+set firewall name video-containers rule 1 description 'Rule: accept_dns'
+set firewall name video-containers rule 1 destination port 'domain,domain-s'
+set firewall name video-containers rule 1 protocol 'tcp_udp'
 
 # From VIDEO to TRUSTED
 set firewall name video-trusted default-action 'drop'
@@ -696,9 +696,9 @@ set firewall name wan-servers description 'From WAN to SERVERS'
 set firewall name wan-servers enable-default-log
 
 # From WAN to SERVICES
-set firewall name wan-services default-action 'drop'
-set firewall name wan-services description 'From WAN to SERVICES'
-set firewall name wan-services enable-default-log
+set firewall name wan-containers default-action 'drop'
+set firewall name wan-containers description 'From WAN to SERVICES'
+set firewall name wan-containers enable-default-log
 
 # From WAN to TRUSTED
 set firewall name wan-trusted default-action 'drop'

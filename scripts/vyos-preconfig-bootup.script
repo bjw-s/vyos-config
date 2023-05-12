@@ -5,7 +5,7 @@
 
 # TODO: Remove if issues don't come back, turn back on if they do
 # Clean dangling container network files
-# rm /var/lib/cni/networks/services/10.5.*
+# rm /var/lib/cni/networks/containers/10.5.*
 
 # Fix for containers requiring a custom user/group id
 # and Vyos not preserving file perms on upgrade
