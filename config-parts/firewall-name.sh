@@ -424,6 +424,12 @@ set firewall name servers-local rule 7 description 'Rule: accept_speedtest_expor
 set firewall name servers-local rule 7 destination port '9798'
 set firewall name servers-local rule 7 protocol 'tcp'
 set firewall name servers-local rule 7 source group address-group 'k8s_nodes'
+# TODO: Needed because of MetalLB?
+set firewall name servers-local rule 8 action 'accept'
+set firewall name servers-local rule 8 description 'Rule: accept_bgp_2'
+set firewall name servers-local rule 8 destination port '3784'
+set firewall name servers-local rule 8 protocol 'udp'
+set firewall name servers-local rule 8 source group address-group 'k8s_nodes'
 
 # From SERVERS to CONTAINERS
 set firewall name servers-containers default-action 'accept'
