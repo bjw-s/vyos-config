@@ -1,8 +1,10 @@
 #!/bin/vbash
 
-# set interfaces ethernet eth0 address 'dhcp'
-# set interfaces ethernet eth0 description 'WAN'
+set interfaces ethernet eth0 description 'WAN - Fiber'
 set interfaces ethernet eth0 hw-id 'e4:3a:6e:5f:33:9c'
+set interfaces ethernet eth0 mtu '1508'
+set interfaces ethernet eth0 vif 6 description 'Internet'
+set interfaces ethernet eth0 vif 6 mtu '1508'
 
 set interfaces ethernet eth1 address '10.1.0.1/24'
 set interfaces ethernet eth1 description 'LAN'
@@ -23,8 +25,14 @@ set interfaces ethernet eth3 hw-id 'e4:3a:6e:5f:33:9f'
 set interfaces ethernet eth4 hw-id 'e4:3a:6e:5f:33:a0'
 
 set interfaces ethernet eth5 hw-id 'e4:3a:6e:5f:33:a1'
-set interfaces ethernet eth5 description 'WAN'
+set interfaces ethernet eth5 description 'WAN - Cable'
 set interfaces ethernet eth5 address 'dhcp'
+
+set interfaces pppoe pppoe0 description 'WAN - Fiber'
+set interfaces pppoe pppoe0 source-interface 'eth0.6'
+set interfaces pppoe pppoe0 mtu '1500'
+set interfaces pppoe pppoe0 authentication user "${SECRET_ISP_AUTH_USER}"
+set interfaces pppoe pppoe0 authentication password "${SECRET_ISP_AUTH_PASSWORD}"
 
 set interfaces wireguard wg01 address '10.0.11.1/24'
 set interfaces wireguard wg01 description 'WIREGUARD'
