@@ -461,7 +461,7 @@ set firewall name servers-video rule 1 description 'Rule: accept_icmp'
 set firewall name servers-video rule 1 protocol 'icmp'
 set firewall name servers-video rule 2 action 'accept'
 set firewall name servers-video rule 2 description 'Rule: accept_k8s_nodes'
-set firewall name servers-video rule 2 protocol 'tcp'
+set firewall name servers-video rule 2 protocol 'tcp_udp'
 set firewall name servers-video rule 2 source group address-group 'k8s_nodes'
 
 # From SERVERS to WAN
@@ -656,6 +656,11 @@ set firewall name video-servers rule 1 destination group address-group 'k8s_hass
 set firewall name video-servers rule 1 destination port '8123'
 set firewall name video-servers rule 1 protocol 'tcp'
 set firewall name video-servers rule 1 source group address-group 'hass_clients'
+set firewall name video-servers rule 2 action 'accept'
+set firewall name video-servers rule 2 description 'Rule: accept_k8s_nodes'
+set firewall name video-servers rule 2 protocol 'udp'
+set firewall name video-servers rule 2 destination group address-group 'k8s_nodes'
+set firewall name video-servers rule 2 source port '6987-6989'
 
 # From VIDEO to CONTAINERS
 set firewall name video-containers default-action 'accept'
