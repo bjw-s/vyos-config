@@ -4,9 +4,6 @@
 # Track certain files and directories
 !.gitignore
 
-!/blocky/
-!/bind/
-!/dnsdist/
-!/haproxy/
-!/unifi/
-!/vector-agent/
+!/config/
+/config/*
+!/config/config.yaml

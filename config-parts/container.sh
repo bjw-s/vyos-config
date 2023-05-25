@@ -44,6 +44,18 @@ set container name dnsdist volume config source '/config/containers/dnsdist/conf
 set container name dnsdist volume config destination '/etc/dnsdist/dnsdist.conf'
 set container name dnsdist volume config mode 'ro'
 
+# blocky
+set container name blocky cap-add 'net-bind-service'
+set container name blocky environment TZ value 'Europe/Amsterdam'
+set container name blocky image 'ghcr.io/0xerr0r/blocky:v0.21'
+set container name blocky memory '0'
+set container name blocky network containers address '10.5.0.7'
+set container name blocky restart 'on-failure'
+set container name blocky shared-memory '0'
+set container name blocky volume config source '/config/containers/blocky/config/config.yaml'
+set container name blocky volume config destination '/app/config.yml'
+set container name blocky volume config mode 'ro'
+
 # haproxy-k8s-api
 set container name haproxy-k8s-api image 'docker.io/library/haproxy:2.7.8'
 set container name haproxy-k8s-api memory '0'
