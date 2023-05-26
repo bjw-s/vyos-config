@@ -33,9 +33,12 @@ $ORIGIN in-addr.arpa.
 16.3.1.10                  IN  PTR  livingroom-shield.bjw-s.tech.
 18.3.1.10                  IN  PTR  livingroom-vacuum.bjw-s.tech.
 22.3.1.10                  IN  PTR  upstairs-vacuum.bjw-s.tech.
+31.3.1.10                  IN  PTR  attic-office-desk-plug.bjw-s.tech.
+32.3.1.10                  IN  PTR  upstairs-office-desk-plug.bjw-s.tech.
 33.3.1.10                  IN  PTR  attic-office-3dprinter-plug.bjw-s.tech.
 35.3.1.10                  IN  PTR  upstairs-office-speaker-esp.bjw-s.tech.
 36.3.1.10                  IN  PTR  attic-office-speaker-esp.bjw-s.tech.
+45.3.1.10                  IN  PTR  hallway-p1reader-esp.bjw-s.tech.
 46.3.1.10                  IN  PTR  hallway-zigbee-adapter.bjw-s.tech.
 53.3.1.10                  IN  PTR  hallway-tablet.bjw-s.tech.
 54.3.1.10                  IN  PTR  garage-tablet.bjw-s.tech.
