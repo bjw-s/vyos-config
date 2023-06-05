@@ -89,6 +89,13 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp ip-address '10.1.3.35'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp mac-address '4c:75:25:bf:b4:d0'
 
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta ip-address '10.1.3.121'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta mac-address '94:c6:91:a6:84:87'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping enigma ip-address '10.1.3.122'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping enigma mac-address '00:e0:4c:68:18:2d'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping felix ip-address '10.1.3.123'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping felix mac-address '00:e0:4c:68:18:23'
+
 # LAN
 set service dhcp-server shared-network-name LAN authoritative
 set service dhcp-server shared-network-name LAN ping-check
