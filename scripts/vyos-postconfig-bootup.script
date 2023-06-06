@@ -3,6 +3,7 @@
 # applied. Any modifications required to work around unfixed bugs or use
 # services not available through the VyOS CLI system can be placed here.
 
+if [ -d "/home/vyos" ]; then
 # Add dotfiles for home directory
 tee /home/vyos/.gitconfig <<END >/dev/null
 [init]
@@ -13,6 +14,7 @@ tee /home/vyos/.gitconfig <<END >/dev/null
   email = me@bjw-s.dev
   name = Bernd Schorgers
 END
+chown vyos:users /home/vyos/.gitconfig
 
 tee -a /home/vyos/.bash_aliases <<END >/dev/null
 export SOPS_AGE_KEY_FILE=/config/secrets/age.key
@@ -21,6 +23,8 @@ export VISUAL=nano
 export EDITOR=nano
 alias podman="sudo podman"
 END
+chown vyos:users /home/vyos/.bash_aliases
+fi
 
 # Disable EEE on network interfaces as a workaround to i225/i226 issues
 while read -r interface
