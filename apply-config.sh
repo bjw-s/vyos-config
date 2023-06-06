@@ -110,9 +110,9 @@ else
   for container in $restart_containers; do
     run restart container $container
   done
-
-  # Clean annoying overlay* folders
-  sudo find "/config" -name "overlay*" -type d -prune -exec rm -rf "{}" \;
 fi
+
+# Clean annoying overlay* folders
+sudo find "/config" -name "overlay*" -type d -prune -exec rm -rf "{}" \;
 
 exit
