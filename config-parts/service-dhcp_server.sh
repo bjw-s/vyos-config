@@ -90,7 +90,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp mac-address '4c:75:25:bf:b4:d0'
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta ip-address '10.1.3.121'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta mac-address '94:c6:91:a6:84:87'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta mac-address '48:21:0b:55:c4:8a'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping enigma ip-address '10.1.3.122'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping enigma mac-address '00:e0:4c:68:18:2d'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping felix ip-address '10.1.3.123'
@@ -131,7 +131,7 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 s
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta ip-address '10.1.1.31'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta mac-address '94:c6:91:a6:84:87'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta mac-address '48:21:0b:55:c4:8a'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping enigma ip-address '10.1.1.32'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping enigma mac-address '00:e0:4c:68:18:2d'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping felix ip-address '10.1.1.33'
