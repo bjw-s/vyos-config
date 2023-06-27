@@ -3,10 +3,9 @@
 
 # Track certain files and directories
 !.gitignore
+!10-pihole-ssl.conf
 
-!/bind/
-!/dnsdist/
-!/haproxy/
+!/dnsmasq/
+/dnsmasq/*
 !/pihole/
-!/unifi/
-!/vector-agent/
+/pihole/*
