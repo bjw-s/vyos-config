@@ -88,6 +88,8 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-desk-plug mac-address 'a4:e5:7c:ab:ca:33'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp ip-address '10.1.3.35'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp mac-address '4c:75:25:bf:b4:d0'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter ip-address '10.1.3.11'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter mac-address '34:85:18:44:aa:94'
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta ip-address '10.1.3.121'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta mac-address '48:21:0b:55:c4:8a'
