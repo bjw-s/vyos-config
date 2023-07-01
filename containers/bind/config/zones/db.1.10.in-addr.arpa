@@ -29,6 +29,16 @@ $ORIGIN in-addr.arpa.
 51.1.1.10                  IN  PTR  horus.bjw-s.tech.
 52.1.1.10                  IN  PTR  diego.bjw-s.tech.
 
+; Trusted
+21.2.1.10                  IN  PTR  bernd-macbook.bjw-s.tech.
+22.2.1.10                  IN  PTR  manyie-macbook.bjw-s.tech.
+31.2.1.10                  IN  PTR  bernd-iphone.bjw-s.tech.
+32.2.1.10                  IN  PTR  bernd-ipad.bjw-s.tech.
+33.2.1.10                  IN  PTR  manyie-iphone.bjw-s.tech.
+34.2.1.10                  IN  PTR  manyie-ipad.bjw-s.tech.
+35.2.1.10                  IN  PTR  eva-ipad.bjw-s.tech.
+36.2.1.10                  IN  PTR  kitchen-ipad.bjw-s.tech.
+
 ; IOT
 16.3.1.10                  IN  PTR  livingroom-shield.bjw-s.tech.
 18.3.1.10                  IN  PTR  livingroom-vacuum.bjw-s.tech.

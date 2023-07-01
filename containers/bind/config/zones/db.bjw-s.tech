@@ -26,6 +26,16 @@ felix                         IN  A  10.1.1.33
 horus                         IN  A  10.1.1.51
 diego                         IN  A  10.1.1.52
 
+; Trusted
+bernd-macbook                 IN  A  10.1.1.21
+bernd-iphone                  IN  A  10.1.1.31
+bernd-ipad                    IN  A  10.1.1.32
+manyie-macbook                IN  A  10.1.1.22
+manyie-iphone                 IN  A  10.1.1.33
+manyie-ipad                   IN  A  10.1.1.34
+eva-ipad                      IN  A  10.1.1.35
+kitchen-ipad                  IN  A  10.1.1.36
+
 ; IOT
 livingroom-shield             IN  A  10.1.3.16
 livingroom-vacuum             IN  A  10.1.3.18
