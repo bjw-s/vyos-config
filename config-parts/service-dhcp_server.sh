@@ -30,8 +30,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-hue-bridge mac-address '00:17:88:2e:2d:5d'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-speaker-esp ip-address '10.1.3.36'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-speaker-esp mac-address 'e8:9f:6d:0a:53:24'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping backyard-shed-esp ip-address '10.1.3.42'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping backyard-shed-esp mac-address 'b4:e6:2d:59:de:0c'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bedroom-eva-sonos ip-address '10.1.3.65'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bedroom-eva-sonos mac-address 'b8:e9:37:55:d8:6c'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bernd-ereader ip-address '10.1.3.51'

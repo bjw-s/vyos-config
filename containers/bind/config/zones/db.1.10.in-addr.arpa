@@ -40,18 +40,42 @@ $ORIGIN in-addr.arpa.
 36.2.1.10                  IN  PTR  kitchen-ipad.bjw-s.tech.
 
 ; IOT
+11.3.1.10                  IN  PTR  attic-office-3dprinter.bjw-s.tech.
+12.3.1.10                  IN  PTR  kitchen-oven.bjw-s.tech.
+13.3.1.10                  IN  PTR  kitchen-coffeemaker.bjw-s.tech.
+14.3.1.10                  IN  PTR  livingroom-tv.bjw-s.tech.
+15.3.1.10                  IN  PTR  livingroom-harmony-hub.bjw-s.tech.
 16.3.1.10                  IN  PTR  livingroom-shield.bjw-s.tech.
+17.3.1.10                  IN  PTR  livingroom-receiver.bjw-s.tech.
 18.3.1.10                  IN  PTR  livingroom-vacuum.bjw-s.tech.
+19.3.1.10                  IN  PTR  livingroom-airpurifier.bjw-s.tech.
+20.3.1.10                  IN  PTR  livingroom-nintendo-switch.bjw-s.tech.
+21.3.1.10                  IN  PTR  garden-wlanthermo.bjw-s.tech.
 22.3.1.10                  IN  PTR  upstairs-vacuum.bjw-s.tech.
+23.3.1.10                  IN  PTR  hallway-tado-bridge.bjw-s.tech.
+24.3.1.10                  IN  PTR  attic-office-hue-bridge.bjw-s.tech.
 31.3.1.10                  IN  PTR  attic-office-desk-plug.bjw-s.tech.
 32.3.1.10                  IN  PTR  upstairs-office-desk-plug.bjw-s.tech.
 33.3.1.10                  IN  PTR  attic-office-3dprinter-plug.bjw-s.tech.
+34.3.1.10                  IN  PTR  spare-p1eu-1.bjw-s.tech.
 35.3.1.10                  IN  PTR  upstairs-office-speaker-esp.bjw-s.tech.
 36.3.1.10                  IN  PTR  attic-office-speaker-esp.bjw-s.tech.
 45.3.1.10                  IN  PTR  hallway-p1reader-esp.bjw-s.tech.
 46.3.1.10                  IN  PTR  hallway-zigbee-adapter.bjw-s.tech.
+51.3.1.10                  IN  PTR  bernd-ereader.bjw-s.tech.
+52.3.1.10                  IN  PTR  manyie-ereader.bjw-s.tech.
 53.3.1.10                  IN  PTR  hallway-tablet.bjw-s.tech.
 54.3.1.10                  IN  PTR  garage-tablet.bjw-s.tech.
+55.3.1.10                  IN  PTR  study-printer.bjw-s.tech.
+61.3.1.10                  IN  PTR  kitchen-sonos.bjw-s.tech.
+62.3.1.10                  IN  PTR  upstairs-office-sonos.bjw-s.tech.
+63.3.1.10                  IN  PTR  livingroom-sonos.bjw-s.tech.
+65.3.1.10                  IN  PTR  bedroom-eva-sonos.bjw-s.tech.
+66.3.1.10                  IN  PTR  livingroom-receiver-sonos.bjw-s.tech.
+67.3.1.10                  IN  PTR  livingroom-sonos-move.bjw-s.tech.
+121.3.1.10                 IN  PTR  delta.bjw-s.tech.
+122.3.1.10                 IN  PTR  enigma.bjw-s.tech.
+123.3.1.10                 IN  PTR  felix.bjw-s.tech.
 
 ; Video
 12.4.1.10                  IN  PTR  driveway-camera-doorbell.bjw-s.tech.
