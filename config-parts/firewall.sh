@@ -32,15 +32,6 @@ set firewall group address-group ios_devices address '10.1.2.34'
 set firewall group address-group ios_devices address '10.1.2.35'
 set firewall group address-group ios_devices address '10.1.2.36'
 
-set firewall group address-group jellyfin_clients address '10.1.2.21'
-set firewall group address-group jellyfin_clients address '10.1.2.31'
-set firewall group address-group jellyfin_clients address '10.1.2.32'
-set firewall group address-group jellyfin_clients address '10.1.2.33'
-set firewall group address-group jellyfin_clients address '10.1.2.34'
-set firewall group address-group jellyfin_clients address '10.1.2.35'
-set firewall group address-group jellyfin_clients address '10.1.2.36'
-set firewall group address-group jellyfin_clients address '10.1.3.16'
-
 set firewall group address-group k8s_api address '10.5.0.2'
 
 set firewall group address-group k8s_ingress address '10.45.0.1'
@@ -48,8 +39,6 @@ set firewall group address-group k8s_ingress address '10.45.0.3'
 
 set firewall group address-group k8s_ingress_allowed address '10.1.3.35'
 set firewall group address-group k8s_ingress_allowed address '10.1.3.36'
-
-set firewall group address-group k8s_jellyfin address '10.45.0.21'
 
 set firewall group address-group k8s_mqtt address '10.45.0.10'
 
