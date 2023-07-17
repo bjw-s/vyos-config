@@ -44,6 +44,7 @@ set firewall group address-group jellyfin_clients address '10.1.3.16'
 set firewall group address-group k8s_api address '10.5.0.2'
 
 set firewall group address-group k8s_ingress address '10.45.0.1'
+set firewall group address-group k8s_ingress address '10.45.0.3'
 
 set firewall group address-group k8s_ingress_allowed address '10.1.3.35'
 set firewall group address-group k8s_ingress_allowed address '10.1.3.36'
