@@ -4,8 +4,8 @@
 ; SOA Records
 $TTL 3600
 $ORIGIN bjw-s.dev.
-@ 3600 IN SOA gateway.bjw-s.tech. gateway.bjw-s.tech. (
-  1682790096         ; serial number (epoch timestamp)
+@ 3600 IN SOA gateway.bjw-s.casa. gateway.bjw-s.casa. (
+  1690965199         ; serial number (epoch timestamp)
   7200               ; refresh period
   3600               ; retry period
   1209600            ; expire time
@@ -13,13 +13,13 @@ $ORIGIN bjw-s.dev.
 )
 
 ; NS Records
-@                          IN  NS gateway.bjw-s.tech.
+@                          IN  NS gateway.bjw-s.casa.
 
 ; Containers
 onepassword-connect        IN  A 10.5.0.5
 pihole                     IN  A 10.5.0.7
 
 ; CNAME Records
-s3                         IN  CNAME nas.bjw-s.tech.
-minio                      IN  CNAME nas.bjw-s.tech.
-vpn                        IN  CNAME gateway.bjw-s.tech.
+s3                         IN  CNAME nas.bjw-s.casa.
+minio                      IN  CNAME nas.bjw-s.casa.
+vpn                        IN  CNAME gateway.bjw-s.casa.

@@ -6,7 +6,7 @@ set container network containers prefix '10.5.0.0/24'
 # cloudflare-ddns
 set container name cloudflare-ddns allow-host-networks
 set container name cloudflare-ddns environment CF_API_TOKEN value "${SECRET_CLOUDFLARE_DYNDNS_TOKEN}"
-set container name cloudflare-ddns environment DOMAINS value 'ipv4.schorgers.nl,ipv4.bjw-s.tech,ipv4.bjw-s.dev,ipv4.bjws.nl'
+set container name cloudflare-ddns environment DOMAINS value 'ipv4.schorgers.nl,ipv4.bjw-s.casa,ipv4.bjw-s.dev,ipv4.bjws.nl'
 set container name cloudflare-ddns environment IP6_PROVIDER value "none"
 set container name cloudflare-ddns environment TZ value 'Europe/Amsterdam'
 set container name cloudflare-ddns environment PGID value "1000"
@@ -79,7 +79,7 @@ set container name pihole environment DNSMASQ_LISTENING value 'single'
 set container name pihole environment FTLCONF_LOCAL_IPV4 value '10.5.0.7'
 set container name pihole environment FTLCONF_BLOCK_ICLOUD_PR value 'false'
 set container name pihole environment REV_SERVER value 'true'
-set container name pihole environment REV_SERVER_DOMAIN value 'bjw-s.tech'
+set container name pihole environment REV_SERVER_DOMAIN value 'bjw-s.casa'
 set container name pihole environment REV_SERVER_TARGET value '10.5.0.3'
 set container name pihole environment REV_SERVER_CIDR value '10.0.0.0/8'
 set container name pihole environment PIHOLE_DNS_ value '127.0.0.1#5335'
