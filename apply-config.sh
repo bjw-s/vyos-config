@@ -3,7 +3,7 @@
 # shellcheck source=/dev/null
 dry_run=true
 
-if [ "$(id -g -n)" != 'vyattacfg' ] ; then
+if [[ "$(id -g -n)" != 'vyattacfg' ]] ; then
     exec sg vyattacfg -c "/bin/vbash $(readlink -f "$0") $*"
 fi
 
@@ -22,7 +22,7 @@ while getopts "c" options; do
 done
 
 # Load secrets into ENV vars
-if [ -f "/config/secrets.sops.env" ]; then
+if [[ -f "/config/secrets.sops.env" ]]; then
   export SOPS_AGE_KEY_FILE=/config/secrets/age.key
 
   mapfile environmentAsArray < <(
@@ -41,20 +41,20 @@ while IFS= read -r -d '' file
 do
   cfgfile="${file%.tmpl}"
 
-  shafile=$file.sha256
-  if ! test -e "$shafile"; then
-    echo "rebuild" >"$shafile"
+  shafile="${file}.sha256"
+  if ! test -e "${shafile}"; then
+    echo "rebuild" >"${shafile}"
   fi
 
-  newsha=$(envsubst <"$file" | shasum -a 256 | awk '{print $1}')
-  oldsha=$(cat "$shafile")
+  newsha=$(envsubst <"${file}" | shasum -a 256 | awk '{print $1}')
+  oldsha=$(cat "${shafile}")
 
-  if ! test "$newsha" == "$oldsha"; then
-    echo "Configuration changed for $file"
-    if ! "$dry_run"; then
-      envsubst <"$file" >"$cfgfile"
-      echo "$newsha" >"$shafile"
-      restart_containers="$restart_containers $(echo "$file" | awk -F / '{print $1}')"
+  if ! test "${newsha}" == "${oldsha}"; then
+    echo "Configuration changed for ${file}"
+    if ! "${dry_run}"; then
+      envsubst <"${file}" >"${cfgfile}"
+      echo "${newsha}" >"${shafile}"
+      restart_containers="${restart_containers} $(echo "${file}" | awk -F / '{print $1}')"
     fi
   fi
 done < <(find containers -type f -name "*.tmpl" -print0)
@@ -67,13 +67,13 @@ load /opt/vyatta/etc/config.boot.default
 
 # Load all config files
 for f in /config/config-parts/*.sh; do
-  if [ -f "${f}" ]; then
+  if [[ -f "${f}" ]]; then
     echo "Processing ${f}"
     source "${f}"
   fi
 done
 
-if "$dry_run"; then
+if "${dry_run}"; then
   # Show what's different from the running config
   compare
 else
@@ -108,8 +108,8 @@ else
   done
 
   # Restart containers
-  for container in $restart_containers; do
-    run restart container "$container"
+  for container in ${restart_containers}; do
+    run restart container "${container}"
   done
 fi
 

@@ -21,6 +21,6 @@ set system syslog host 10.45.0.2 port '6001'
 set system syslog host 10.45.0.2 format 'octet-counted'
 
 set system task-scheduler task backup-config crontab-spec '30 0 * * *'
-set system task-scheduler task backup-config executable path '/config/scripts/custom-config-backup.sh'
+set system task-scheduler task backup-config executable path '/config/scripts/task-config-backup-usb.sh'
 
 set system time-zone 'Europe/Amsterdam'

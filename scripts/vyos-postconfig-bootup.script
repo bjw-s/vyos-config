@@ -5,7 +5,7 @@
 
 if [ -d "/home/vyos" ]; then
 # Add dotfiles for home directory
-tee /home/vyos/.gitconfig <<END >/dev/null
+  tee /home/vyos/.gitconfig <<END >/dev/null
 [init]
   defaultBranch = main
 [safe]
@@ -14,16 +14,15 @@ tee /home/vyos/.gitconfig <<END >/dev/null
   email = me@bjw-s.dev
   name = Bernd Schorgers
 END
-chown vyos:users /home/vyos/.gitconfig
+  chown vyos:users /home/vyos/.gitconfig
 
-tee -a /home/vyos/.bash_aliases <<END >/dev/null
+  tee -a /home/vyos/.bash_aliases <<END >/dev/null
 export SOPS_AGE_KEY_FILE=/config/secrets/age.key
 export GIT_SSH_COMMAND="ssh -i /config/secrets/id_ed25519"
-export VISUAL=nano
-export EDITOR=nano
-alias podman="sudo podman"
+export VISUAL=vi
+export EDITOR=vi
 END
-chown vyos:users /home/vyos/.bash_aliases
+  chown vyos:users /home/vyos/.bash_aliases
 fi
 
 # Disable EEE on network interfaces as a workaround to i225/i226 issues

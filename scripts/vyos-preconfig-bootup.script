@@ -3,18 +3,9 @@
 # Any modifications required to work around unfixed bugs or use
 # services not available through the VyOS CLI system can be placed here.
 
-# TODO: Remove if issues don't come back, turn back on if they do
-# Clean dangling container network files
-# rm /var/lib/cni/networks/containers/10.5.*
-
 # Fix for containers requiring a custom user/group id
 # and Vyos not preserving file perms on upgrade
 mkdir -p /tmp/onepassword/data
 chown -R 999 /tmp/onepassword/data
 mkdir -p /tmp/bind/cache
 chown -R 104 /tmp/bind/cache
-
-# Mount USB Backup Drive
-backupdest=/media/usb-backup
-mkdir -p "$backupdest"
-mount.exfat-fuse -o rw,uid=vyos,gid=vyattacfg /dev/disk/by-id/usb-USB_SanDisk_3.2Gen1_0401853931cd180d6b2371659b9f24f92dd8e4bd8a39ebee5f7163a1785d2ff3221700000000000000000000dcdd864500076b1883558107c0accd55-0:0-part2 "$backupdest"
