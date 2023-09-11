@@ -7,10 +7,6 @@ set firewall all-ping enable
 set firewall broadcast-ping disable
 
 # Address Groups
-set firewall group address-group 3d_printer_controllers address '10.1.3.56'
-
-set firewall group address-group android_tv_players address '10.1.3.16'
-
 set firewall group address-group ereaders address '10.1.3.51'
 set firewall group address-group ereaders address '10.1.3.52'
 
@@ -100,13 +96,8 @@ set firewall group address-group unifi_devices address '10.1.0.22'
 set firewall group address-group unifi_devices address '10.1.0.23'
 set firewall group address-group unifi_devices address '10.1.0.24'
 
-set firewall group address-group vector_journald_allowed address '10.1.3.56'
-set firewall group address-group vector_journald_allowed address '10.1.3.60'
-
 set firewall group address-group vyos_coredns address '10.5.0.3'
-
 set firewall group address-group vyos_dnsdist address '10.5.0.4'
-
 set firewall group address-group vyos_unifi address '10.5.0.10'
 
 set firewall group address-group wall_displays address '10.1.3.53'
