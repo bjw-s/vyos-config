@@ -8,9 +8,10 @@
 !/LICENSE
 
 # VyOS config
-!scripts/
+!bootstrap/
 !config-parts/
 !containers/
+!scripts/
 
 # CI
 !.github/
