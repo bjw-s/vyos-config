@@ -1,10 +1,22 @@
 #!/bin/vbash
 
-# General configuration
-set firewall state-policy established action 'accept'
-set firewall state-policy related action 'accept'
-set firewall all-ping enable
-set firewall broadcast-ping disable
+# Interface groups
+set firewall group interface-group IG_containers interface 'pod-containers'
+set firewall group interface-group IG_guest interface 'eth1.30'
+set firewall group interface-group IG_iot interface 'eth1.40'
+set firewall group interface-group IG_lan interface 'eth1'
+set firewall group interface-group IG_servers interface 'eth1.10'
+set firewall group interface-group IG_trusted interface 'eth1.20'
+set firewall group interface-group IG_trusted interface 'wg01'
+set firewall group interface-group IG_video interface 'eth1.50'
+set firewall group interface-group IG_wan interface 'eth5'
+set firewall group interface-group IG_wan interface 'pppoe0'
+
+# Router (VyOS itself)
+set firewall group address-group router-addresses address 10.0.0.1
+set firewall group address-group router-addresses address 127.0.0.1
+set firewall group ipv6-address-group router-addresses-ipv6 address fe80::e63a:6eff:fe5a:f805
+set firewall group ipv6-address-group router-addresses-ipv6 address ::1
 
 # k8s nodes
 set firewall group address-group k8s_nodes address '10.1.1.31-10.1.1.33' # Servers vLAN
