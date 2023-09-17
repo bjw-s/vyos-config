@@ -11,7 +11,7 @@ set container name cloudflare-ddns environment IP6_PROVIDER value "none"
 set container name cloudflare-ddns environment TZ value 'Europe/Amsterdam'
 set container name cloudflare-ddns environment PGID value "1000"
 set container name cloudflare-ddns environment PUID value "1000"
-set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.10.0'
+set container name cloudflare-ddns image 'docker.io/favonia/cloudflare-ddns:1.10.1'
 set container name cloudflare-ddns memory '0'
 set container name cloudflare-ddns restart 'on-failure'
 set container name cloudflare-ddns shared-memory '0'
