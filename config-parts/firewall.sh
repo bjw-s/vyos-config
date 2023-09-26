@@ -66,7 +66,7 @@ set firewall group address-group sonos_controllers address '10.1.2.21' # Bernd
 set firewall group address-group sonos_controllers address '10.1.2.31-10.1.2.32'
 set firewall group address-group sonos_controllers address '10.1.2.22' # Man-Yie
 set firewall group address-group sonos_controllers address '10.1.2.33-10.1.2.34'
-set firewall group address-group sonos_controllers address '10.1.2.36' # Kitchen
+set firewall group address-group sonos_controllers address '10.1.3.25' # Kitchen
 
 # Sonos players
 set firewall group address-group sonos_players address '10.1.3.61-10.1.3.67'

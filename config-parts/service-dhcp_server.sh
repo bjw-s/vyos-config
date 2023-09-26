@@ -88,6 +88,9 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp mac-address '4c:75:25:bf:b4:d0'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter ip-address '10.1.3.11'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter mac-address '34:85:18:44:aa:94'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping kitchen-ipad ip-address '10.1.3.25'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping kitchen-ipad mac-address '34:e2:fd:ac:7c:fa'
+
 
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta ip-address '10.1.3.121'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping delta mac-address '48:21:0b:55:c4:8a'
@@ -162,8 +165,6 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping bernd-macbook mac-address 'f8:4d:89:7a:db:8b'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping eva-ipad ip-address '10.1.2.35'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping eva-ipad mac-address 'aa:ab:96:ce:f8:03'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping kitchen-ipad ip-address '10.1.2.36'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping kitchen-ipad mac-address '34:e2:fd:ac:7c:fa'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-ipad ip-address '10.1.2.34'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-ipad mac-address '94:bf:2d:f0:3f:c3'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-iphone ip-address '10.1.2.33'
