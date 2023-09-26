@@ -55,6 +55,12 @@ set firewall group address-group plex_clients address '10.1.3.16' # Apple TV
 # Printers
 set firewall group address-group printers address '10.1.3.55'
 
+# 3D printer
+set firewall group port-group bambu-discovery port '1990'
+set firewall group port-group bambu-discovery port '2021'
+
+set firewall group address-group bambu-printers address '10.1.3.11'
+
 # Printer client machines
 set firewall group address-group printer_allowed address '192.168.2.11'
 
