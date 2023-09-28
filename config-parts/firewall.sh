@@ -68,6 +68,8 @@ set firewall group address-group printer_allowed address '192.168.2.11'
 set firewall group address-group scanners address '10.1.3.55'
 
 # Sonos controllers
+set firewall group port-group sonos-controller-discovery port '1900'
+
 set firewall group address-group sonos_controllers address '10.1.2.21' # Bernd
 set firewall group address-group sonos_controllers address '10.1.2.31-10.1.2.32'
 set firewall group address-group sonos_controllers address '10.1.2.22' # Man-Yie
@@ -75,6 +77,8 @@ set firewall group address-group sonos_controllers address '10.1.2.33-10.1.2.34'
 set firewall group address-group sonos_controllers address '10.1.3.25' # Kitchen
 
 # Sonos players
+set firewall group port-group sonos-player-discovery port '1900'
+
 set firewall group address-group sonos_players address '10.1.3.61-10.1.3.67'
 
 # Unifi devices
