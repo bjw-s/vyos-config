@@ -73,9 +73,11 @@ for f in /config/config-parts/*.sh; do
   fi
 done
 
+echo "Changes to running config:"
+compare
+
 if "${dry_run}"; then
-  # Show what's different from the running config
-  compare
+  exit 0
 else
   # Pull new container images
   mapfile -t AVAILABLE_IMAGES < <(run show container image | awk '{ if ( NR > 1  ) { print $1 ":" $2} }')
