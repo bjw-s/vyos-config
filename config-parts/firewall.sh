@@ -42,6 +42,7 @@ set firewall group address-group mqtt_clients address '10.1.2.21' # Bernd
 set firewall group address-group mqtt_clients address '10.1.2.32'
 set firewall group address-group mqtt_clients address '10.1.3.18' # Vacuum livingroom
 set firewall group address-group mqtt_clients address '10.1.3.22' # Vacuum upstairs
+set firewall group address-group mqtt_clients address '10.1.3.38' # Ventilation ESP
 
 # Plex client devices
 set firewall group address-group plex_clients address '10.1.2.21' # Bernd
