@@ -148,8 +148,6 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gladius ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gladius mac-address '9c:6b:00:04:d5:49'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping horus ip-address '10.1.1.51'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping horus mac-address 'b8:27:eb:b2:09:b0'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping diego ip-address '10.1.1.52'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping diego mac-address 'dc:a6:32:93:f5:83'
 
