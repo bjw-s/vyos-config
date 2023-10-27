@@ -93,6 +93,7 @@ set firewall group address-group vyos_unifi address '10.5.0.10'
 
 # Storage devices
 set firewall group address-group nas address '10.1.1.11'
+set firewall group address-group nas address '10.1.1.12'
 
 # Port groups
 set firewall group port-group wireguard port '51820'
