@@ -53,13 +53,10 @@ $ORIGIN in-addr.arpa.
 21.3.1.10                  IN  PTR  garden-wlanthermo.bjw-s.casa.
 22.3.1.10                  IN  PTR  upstairs-vacuum.bjw-s.casa.
 23.3.1.10                  IN  PTR  hallway-tado-bridge.bjw-s.casa.
-24.3.1.10                  IN  PTR  attic-office-hue-bridge.bjw-s.casa.
 31.3.1.10                  IN  PTR  attic-office-desk-plug.bjw-s.casa.
 32.3.1.10                  IN  PTR  upstairs-office-desk-plug.bjw-s.casa.
 33.3.1.10                  IN  PTR  attic-office-3dprinter-plug.bjw-s.casa.
 34.3.1.10                  IN  PTR  spare-p1eu-1.bjw-s.casa.
-35.3.1.10                  IN  PTR  upstairs-office-speaker-esp.bjw-s.casa.
-36.3.1.10                  IN  PTR  attic-office-speaker-esp.bjw-s.casa.
 45.3.1.10                  IN  PTR  hallway-p1reader-esp.bjw-s.casa.
 46.3.1.10                  IN  PTR  hallway-zigbee-adapter.bjw-s.casa.
 51.3.1.10                  IN  PTR  bernd-ereader.bjw-s.casa.

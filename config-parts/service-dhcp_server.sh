@@ -26,10 +26,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter-plug mac-address 'a4:e5:7c:ab:f4:cd'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-desk-plug ip-address '10.1.3.31'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-desk-plug mac-address 'a4:e5:7c:ab:f5:ad'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-hue-bridge ip-address '10.1.3.24'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-hue-bridge mac-address '00:17:88:2e:2d:5d'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-speaker-esp ip-address '10.1.3.36'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-speaker-esp mac-address 'e8:9f:6d:0a:53:24'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bedroom-bed-occupancy-esp ip-address '10.1.3.37'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping bedroom-bed-occupancy-esp mac-address 'a4:cf:12:25:0f:e8'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-ventilation-esp ip-address '10.1.3.38'
@@ -88,8 +84,6 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-sonos mac-address '94:9f:3e:04:88:2a'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-desk-plug ip-address '10.1.3.32'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-desk-plug mac-address 'a4:e5:7c:ab:ca:33'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp ip-address '10.1.3.35'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping upstairs-office-speaker-esp mac-address '4c:75:25:bf:b4:d0'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter ip-address '10.1.3.11'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping attic-office-3dprinter mac-address '34:85:18:44:aa:94'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping kitchen-ipad ip-address '10.1.3.25'
@@ -126,6 +120,8 @@ set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mappin
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping switch02 mac-address '68:d7:9a:3c:b0:75'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping switch03 ip-address '10.1.0.13'
 set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping switch03 mac-address '74:83:c2:0c:19:90'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping switch04 ip-address '10.1.0.14'
+set service dhcp-server shared-network-name LAN subnet 10.1.0.0/24 static-mapping switch04 mac-address '70:a7:41:e5:76:a2'
 
 # Servers VLAN
 set service dhcp-server shared-network-name SERVERS authoritative
