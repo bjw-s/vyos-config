@@ -149,7 +149,7 @@ set container name udp-broadcast-relay-mdns shared-memory '0'
 # unifi
 set container name unifi environment TZ value 'Europe/Amsterdam'
 set container name unifi environment RUNAS_UID0 value 'false'
-set container name unifi environment PGID value '999'
+set container name unifi environment PGID value '102'
 set container name unifi environment PUID value '999'
 set container name unifi image 'ghcr.io/goofball222/unifi:7.5.187'
 set container name unifi memory '0'
