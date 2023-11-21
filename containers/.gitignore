@@ -5,8 +5,8 @@
 !.gitignore
 
 !/bind/
+!/blocky/
 !/dnsdist/
 !/haproxy/
-!/pihole/
 !/unifi/
 !/vector-agent/

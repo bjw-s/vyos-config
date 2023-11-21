@@ -3,3 +3,7 @@
 
 # Track certain files and directories
 !.gitignore
+
+!/config/
+/config/*
+!/config/config.yml
