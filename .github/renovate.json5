@@ -1,26 +1,20 @@
 {
-  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-  "extends": [
+  $schema: "https://docs.renovatebot.com/renovate-schema.json",
+  extends: [
     "github>bjw-s/renovate-config",
     "github>bjw-s/renovate-config:automerge-github-actions",
   ],
-  "platform": "github",
-  "username": "bjw-s-bot[bot]",
-  "gitAuthor": "bjw-s-bot <87358111+bjw-s-bot[bot]@users.noreply.github.com>",
-  "repositories": ["bjw-s/vyos-config"],
-  "regexManagers": [
+  regexManagers: [
     {
-      "description": ["Generic Docker image Regex manager"],
-      "fileMatch": [
-        "config-parts/.+\\.sh$"
+      description: ["Generic Docker image Regex manager"],
+      fileMatch: ["config-parts/.+\\.sh$"],
+      matchStrings: [
+        "set container name .* image '?(?<depName>.*?):(?<currentValue>[^'\n]*=?)'?",
       ],
-      "matchStrings": [
-        "set container name .* image '?(?<depName>.*?):(?<currentValue>[^'\n]*=?)'?"
-      ],
-      "datasourceTemplate": "docker"
+      datasourceTemplate: "docker",
     },
   ],
-  "packageRules": [
+  packageRules: [
     {
       description: "1Password Connect images",
       groupName: "1password-connect",
@@ -29,10 +23,10 @@
         "docker.io/1password/connect-api",
       ],
       matchDatasources: ["docker"],
-      "group": {
-        "commitMessageTopic": "{{{groupName}}} group"
+      group: {
+        commitMessageTopic: "{{{groupName}}} group",
       },
       separateMinorPatch: true,
     },
-  ]
+  ],
 }
