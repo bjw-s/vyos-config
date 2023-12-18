@@ -19,7 +19,6 @@ $ORIGIN bjw-s.casa.
 gateway                       IN  A  10.1.0.1
 
 ; Servers
-librarium                     IN  A  10.1.1.11
 gladius                       IN  A  10.1.1.12
 delta                         IN  A  10.1.1.31
 enigma                        IN  A  10.1.1.32
@@ -74,7 +73,8 @@ driveway-camera-doorbell      IN  A  10.1.4.12
 
 ; Containers
 cluster-0                     IN  A  10.5.0.2
+main.k8s                      IN  A  10.5.0.2
 
 ; CNAME records
-nas                           IN  CNAME  librarium.bjw-s.casa.
+nas.k8s                       IN  CNAME  gladius.bjw-s.casa.
 pikvm                         IN  CNAME  diego.bjw-s.casa.

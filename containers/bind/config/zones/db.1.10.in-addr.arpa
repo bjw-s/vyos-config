@@ -22,7 +22,6 @@ $ORIGIN in-addr.arpa.
 1.0.1.10                   IN  PTR  gateway.bjw-s.casa.
 
 ; Servers
-11.1.1.10                  IN  PTR  librarium.bjw-s.casa.
 12.1.1.10                  IN  PTR  gladius.bjw-s.casa.
 31.1.1.10                  IN  PTR  delta.bjw-s.casa.
 32.1.1.10                  IN  PTR  enigma.bjw-s.casa.
