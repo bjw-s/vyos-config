@@ -44,3 +44,4 @@ blocking:
       - ads
       - fakenews
       - gambling
+    manyie*: []
