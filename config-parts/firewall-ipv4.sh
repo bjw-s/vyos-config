@@ -239,7 +239,7 @@ set firewall ipv4 name lan-guest rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name lan-guest rule 999 state invalid
 set firewall ipv4 name lan-guest rule 999 log
 
-# From LAN to GUEST
+# From LAN to IOT
 set firewall ipv4 name lan-iot default-action 'drop'
 set firewall ipv4 name lan-iot description 'From LAN to IOT'
 set firewall ipv4 name lan-iot enable-default-log
