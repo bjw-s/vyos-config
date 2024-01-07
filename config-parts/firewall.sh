@@ -33,18 +33,17 @@ set firewall group address-group k8s_vector_aggregator address '10.45.0.2'
 
 # MQTT client devices
 set firewall group address-group mqtt_clients address '10.1.2.21' # Bernd
-set firewall group address-group mqtt_clients address '10.1.2.32'
 set firewall group address-group mqtt_clients address '10.1.3.18' # Vacuum livingroom
 set firewall group address-group mqtt_clients address '10.1.3.22' # Vacuum upstairs
 set firewall group address-group mqtt_clients address '10.1.3.38' # Ventilation ESP
 
 # Plex client devices
 set firewall group address-group plex_clients address '10.1.2.21' # Bernd
-set firewall group address-group plex_clients address '10.1.2.31-10.1.2.32'
+set firewall group address-group plex_clients address '10.1.2.31'
 set firewall group address-group plex_clients address '10.1.2.22' # Man-Yie
 set firewall group address-group plex_clients address '10.1.2.33-10.1.2.34'
 set firewall group address-group plex_clients address '10.1.2.35' # Eva
-set firewall group address-group plex_clients address '10.1.2.36' # Kitchen
+set firewall group address-group plex_clients address '10.1.2.36' # Shared
 set firewall group address-group plex_clients address '10.1.3.16' # Apple TV
 
 # Printers
@@ -66,10 +65,10 @@ set firewall group address-group scanners address '10.1.3.55'
 set firewall group port-group sonos-controller-discovery port '1900'
 
 set firewall group address-group sonos_controllers address '10.1.2.21' # Bernd
-set firewall group address-group sonos_controllers address '10.1.2.31-10.1.2.32'
+set firewall group address-group sonos_controllers address '10.1.2.31'
 set firewall group address-group sonos_controllers address '10.1.2.22' # Man-Yie
 set firewall group address-group sonos_controllers address '10.1.2.33-10.1.2.34'
-set firewall group address-group sonos_controllers address '10.1.3.25' # Kitchen
+set firewall group address-group sonos_controllers address '10.1.3.36' # Shared
 
 # Sonos players
 set firewall group port-group sonos-player-discovery port '1900'

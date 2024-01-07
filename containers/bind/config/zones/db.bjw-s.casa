@@ -28,12 +28,11 @@ diego                         IN  A  10.1.1.52
 ; Trusted
 bernd-macbook                 IN  A  10.1.2.21
 bernd-iphone                  IN  A  10.1.2.31
-bernd-ipad                    IN  A  10.1.2.32
 manyie-macbook                IN  A  10.1.2.22
 manyie-iphone                 IN  A  10.1.2.33
 manyie-ipad                   IN  A  10.1.2.34
 eva-ipad                      IN  A  10.1.2.35
-kitchen-ipad                  IN  A  10.1.2.36
+shared-ipad                   IN  A  10.1.2.36
 
 ; IOT
 attic-office-3dprinter        IN  A  10.1.3.11
