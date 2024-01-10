@@ -63,7 +63,7 @@ set container name lego-auto volume datadir destination '/config'
 set container name lego-auto volume datadir mode 'rw'
 
 # blocky
-set container name blocky image 'ghcr.io/0xerr0r/blocky:development@sha256:7dd109bfb4bcfb975732ef0a57b3d8bda40993b322bf1ad4871cb6c78ed943f5'
+set container name blocky image 'ghcr.io/0xerr0r/blocky:v0.23'
 set container name blocky memory '0'
 set container name blocky network containers address '10.5.0.7'
 set container name blocky shared-memory '0'
