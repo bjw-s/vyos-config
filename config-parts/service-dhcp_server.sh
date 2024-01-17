@@ -157,7 +157,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping bernd-macbook ip-address '10.1.2.21'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping bernd-macbook mac-address 'f8:4d:89:7a:db:8b'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-ipad ip-address '10.1.2.34'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-ipad mac-address '94:bf:2d:f0:3f:c3'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-ipad mac-address '40:e6:4b:14:88:c0'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-iphone ip-address '10.1.2.33'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-iphone mac-address '8c:98:6b:a9:18:cb'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping manyie-macbook ip-address '10.1.2.22'
@@ -165,7 +165,7 @@ set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-ma
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping eva-ipad ip-address '10.1.2.35'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping eva-ipad mac-address '54:62:e2:53:72:1b'
 set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping shared-ipad ip-address '10.1.2.36'
-set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping shared-ipad mac-address 'aa:ab:96:ce:f8:03'
+set service dhcp-server shared-network-name TRUSTED subnet 10.1.2.0/24 static-mapping shared-ipad mac-address '94:bf:2d:f0:3f:c3'
 
 # Video VLAN
 set service dhcp-server shared-network-name VIDEO authoritative
