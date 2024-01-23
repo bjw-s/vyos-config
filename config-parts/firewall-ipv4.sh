@@ -131,6 +131,11 @@ set firewall ipv4 name iot-local rule 200 description 'Rule: accept_discovery_fr
 set firewall ipv4 name iot-local rule 200 destination group port-group sonos-player-discovery
 set firewall ipv4 name iot-local rule 200 protocol 'udp'
 set firewall ipv4 name iot-local rule 200 source group address-group 'sonos_players'
+set firewall ipv4 name iot-local rule 210 action 'accept'
+set firewall ipv4 name iot-local rule 210 description 'Rule: accept_api_from_sonos_controllers'
+set firewall ipv4 name iot-local rule 210 destination group port-group sonos-controller-api
+set firewall ipv4 name iot-local rule 210 protocol 'tcp'
+set firewall ipv4 name iot-local rule 210 source group address-group 'sonos_controllers'
 set firewall ipv4 name iot-local rule 300 action 'accept'
 set firewall ipv4 name iot-local rule 300 description 'Rule: accept_discovery_from_bambu_printers'
 set firewall ipv4 name iot-local rule 300 destination group port-group bambu-discovery
