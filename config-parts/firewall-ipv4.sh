@@ -581,6 +581,10 @@ set firewall ipv4 name containers-lan rule 999 log
 set firewall ipv4 name containers-local default-action 'drop'
 set firewall ipv4 name containers-local description 'From CONTAINERS to LOCAL'
 set firewall ipv4 name containers-local default-log
+set firewall ipv4 name containers-local rule 40 action 'accept'
+set firewall ipv4 name containers-local rule 40 description 'Rule: accept_dns'
+set firewall ipv4 name containers-local rule 40 destination port 'domain,domain-s'
+set firewall ipv4 name containers-local rule 40 protocol 'tcp_udp'
 set firewall ipv4 name containers-local rule 50 action 'accept'
 set firewall ipv4 name containers-local rule 50 description 'Rule: accept_dhcp'
 set firewall ipv4 name containers-local rule 50 destination port '67,68'
