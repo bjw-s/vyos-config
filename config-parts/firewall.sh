@@ -17,14 +17,16 @@ set firewall group address-group k8s_nodes address '10.1.1.31-10.1.1.33' # Serve
 set firewall group address-group k8s_nodes address '10.1.3.121-10.1.3.123' # IoT vLAN
 
 # k8s ingress client devices
-set firewall group address-group k8s_ingress_allowed address '10.1.3.35'
-set firewall group address-group k8s_ingress_allowed address '10.1.3.36'
-set firewall group address-group k8s_ingress_allowed address '10.1.3.53'
-set firewall group address-group k8s_ingress_allowed address '10.1.3.54'
+set firewall group address-group k8s_ingress_allowed address '10.1.3.16' # Apple TV
+set firewall group address-group k8s_ingress_allowed address '10.1.3.35' # Shared iPad
+set firewall group address-group k8s_ingress_allowed address '10.1.3.36' # iPad Eva
+set firewall group address-group k8s_ingress_allowed address '10.1.3.53' # Tablet Hallway
+set firewall group address-group k8s_ingress_allowed address '10.1.3.54' # Tablet Garage
 
 # k8s cluster services
 set firewall group address-group k8s_api address '10.5.0.2'
 set firewall group address-group k8s_hass address '10.1.3.151'
+set firewall group address-group k8s_scrypted address '10.1.3.153'
 set firewall group address-group k8s_ingress address '10.45.0.1'
 set firewall group address-group k8s_ingress address '10.45.0.3'
 set firewall group address-group k8s_mqtt address '10.45.0.10'
@@ -43,7 +45,7 @@ set firewall group address-group plex_clients address '10.1.2.31'
 set firewall group address-group plex_clients address '10.1.2.22' # Man-Yie
 set firewall group address-group plex_clients address '10.1.2.33-10.1.2.34'
 set firewall group address-group plex_clients address '10.1.2.35' # Eva
-set firewall group address-group plex_clients address '10.1.2.36' # Shared
+set firewall group address-group plex_clients address '10.1.2.36' # Shared iPad
 set firewall group address-group plex_clients address '10.1.3.16' # Apple TV
 
 # Printers
@@ -81,13 +83,17 @@ set firewall group address-group sonos_players address '10.1.3.61-10.1.3.67'
 set firewall group address-group unifi_devices address '10.1.0.11-10.1.0.13' # Switches
 set firewall group address-group unifi_devices address '10.1.0.21-10.1.0.24' # AP's
 
+# Apple devices
+set firewall group address-group apple_devices address '10.1.3.16' # Apple TV
+
+set firewall group port-group apple_services_ports port '3722'
+
 # Vyos containers addresses
 set firewall group address-group vyos_coredns address '10.5.0.3'
 set firewall group address-group vyos_dnsdist address '10.5.0.4'
 set firewall group address-group vyos_unifi address '10.5.0.10'
 
 # Storage devices
-set firewall group address-group nas address '10.1.1.11'
 set firewall group address-group nas address '10.1.1.12'
 
 # Port groups

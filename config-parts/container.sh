@@ -109,19 +109,6 @@ set container name speedtest-exporter allow-host-networks
 set container name speedtest-exporter restart 'on-failure'
 set container name speedtest-exporter shared-memory '0'
 
-# udp-broadcast-relay-mdns
-set container name udp-broadcast-relay-mdns allow-host-networks
-set container name udp-broadcast-relay-mdns cap-add 'net-raw'
-set container name udp-broadcast-relay-mdns environment CFG_DEV value 'eth1.20;eth1.40'
-set container name udp-broadcast-relay-mdns environment CFG_ID value '2'
-set container name udp-broadcast-relay-mdns environment CFG_MULTICAST value '224.0.0.251'
-set container name udp-broadcast-relay-mdns environment CFG_PORT value '5353'
-set container name udp-broadcast-relay-mdns environment SEPARATOR value ';'
-set container name udp-broadcast-relay-mdns image 'ghcr.io/onedr0p/udp-broadcast-relay-redux:1.0.28'
-set container name udp-broadcast-relay-mdns memory '0'
-set container name udp-broadcast-relay-mdns restart 'on-failure'
-set container name udp-broadcast-relay-mdns shared-memory '0'
-
 # unifi
 set container name unifi environment TZ value 'Europe/Amsterdam'
 set container name unifi environment RUNAS_UID0 value 'false'
