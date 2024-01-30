@@ -11,6 +11,8 @@ set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 range 0 
 
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping manyie-work-laptop ip-address '192.168.2.11'
 set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping manyie-work-laptop mac-address '14:f6:d8:32:46:41'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping bernd-work-laptop ip-address '192.168.2.12'
+set service dhcp-server shared-network-name GUEST subnet 192.168.2.0/24 static-mapping bernd-work-laptop mac-address '5c:e9:1e:7b:f2:c2'
 
 # IoT VLAN
 set service dhcp-server shared-network-name IOT authoritative
@@ -139,8 +141,8 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-ma
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gladius ip-address '10.1.1.12'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping gladius mac-address '9c:6b:00:04:d5:49'
 
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping diego ip-address '10.1.1.52'
-set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping diego mac-address 'dc:a6:32:93:f5:83'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm ip-address '10.1.1.52'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping pikvm mac-address 'dc:a6:32:93:f5:83'
 
 # Trusted VLAN
 set service dhcp-server shared-network-name TRUSTED authoritative

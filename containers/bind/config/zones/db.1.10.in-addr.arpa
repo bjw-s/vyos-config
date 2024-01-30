@@ -26,7 +26,7 @@ $ORIGIN in-addr.arpa.
 31.1.1.10                  IN  PTR  delta.bjw-s.casa.
 32.1.1.10                  IN  PTR  enigma.bjw-s.casa.
 33.1.1.10                  IN  PTR  felix.bjw-s.casa.
-52.1.1.10                  IN  PTR  diego.bjw-s.casa.
+52.1.1.10                  IN  PTR  pikvm.bjw-s.casa.
 
 ; Trusted
 21.2.1.10                  IN  PTR  bernd-macbook.bjw-s.casa.

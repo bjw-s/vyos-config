@@ -47,6 +47,12 @@ set firewall ipv4 name guest-local rule 999 log
 set firewall ipv4 name guest-servers default-action 'drop'
 set firewall ipv4 name guest-servers description 'From GUEST to SERVERS'
 set firewall ipv4 name guest-servers default-log
+set firewall ipv4 name guest-servers rule 410 action 'accept'
+set firewall ipv4 name guest-servers rule 410 description 'Rule: accept_k8s_ingress_from_allowed_devices'
+set firewall ipv4 name guest-servers rule 410 destination group address-group 'k8s_ingress'
+set firewall ipv4 name guest-servers rule 410 destination port 'http,https'
+set firewall ipv4 name guest-servers rule 410 protocol 'tcp'
+set firewall ipv4 name guest-servers rule 410 source group address-group 'k8s_ingress_allowed'
 set firewall ipv4 name guest-servers rule 999 action 'drop'
 set firewall ipv4 name guest-servers rule 999 description 'Rule: drop_invalid'
 set firewall ipv4 name guest-servers rule 999 state invalid

@@ -22,6 +22,8 @@ set firewall group address-group k8s_ingress_allowed address '10.1.3.35' # Share
 set firewall group address-group k8s_ingress_allowed address '10.1.3.36' # iPad Eva
 set firewall group address-group k8s_ingress_allowed address '10.1.3.53' # Tablet Hallway
 set firewall group address-group k8s_ingress_allowed address '10.1.3.54' # Tablet Garage
+set firewall group address-group k8s_ingress_allowed address '192.168.2.11' # Work machine
+set firewall group address-group k8s_ingress_allowed address '192.168.2.12' # Work machine
 
 # k8s cluster services
 set firewall group address-group k8s_api address '10.5.0.2'

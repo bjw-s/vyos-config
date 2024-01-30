@@ -23,7 +23,7 @@ gladius                       IN  A  10.1.1.12
 delta                         IN  A  10.1.1.31
 enigma                        IN  A  10.1.1.32
 felix                         IN  A  10.1.1.33
-diego                         IN  A  10.1.1.52
+pikvm                         IN  A  10.1.1.52
 
 ; Trusted
 bernd-macbook                 IN  A  10.1.2.21
@@ -76,4 +76,3 @@ main.k8s                      IN  A  10.5.0.2
 
 ; CNAME records
 nas.k8s                       IN  CNAME  gladius.bjw-s.casa.
-pikvm                         IN  CNAME  diego.bjw-s.casa.
