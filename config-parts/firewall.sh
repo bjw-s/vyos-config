@@ -74,7 +74,6 @@ set firewall group address-group sonos_controllers address '10.1.2.31'
 set firewall group address-group sonos_controllers address '10.1.2.22' # Man-Yie
 set firewall group address-group sonos_controllers address '10.1.2.33-10.1.2.34'
 set firewall group address-group sonos_controllers address '10.1.3.36' # Shared
-set firewall group address-group sonos_controllers address '10.1.3.153' # Music-Assistant
 
 # Sonos players
 set firewall group port-group sonos-player-discovery port '1900'
