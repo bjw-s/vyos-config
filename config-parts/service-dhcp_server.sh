@@ -1,5 +1,8 @@
 #!/bin/vbash
 
+# Global options
+set service dhcp-server global-parameters 'option system-arch code 93 = unsigned integer 16;'
+
 # Guest VLAN
 set service dhcp-server shared-network-name GUEST authoritative
 set service dhcp-server shared-network-name GUEST ping-check
@@ -131,6 +134,15 @@ set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 lease '86
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 name-server '10.5.0.4'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 start '10.1.1.200'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 range 0 stop '10.1.1.254'
+
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow bootp;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'allow booting;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'next-server 10.1.1.1;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'if exists user-class and option user-class = &quot;iPXE&quot; {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;http://10.5.0.8/boot.ipxe&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '} else {'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters 'filename &quot;ipxe.efi&quot;;'
+set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 subnet-parameters '}'
 
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta ip-address '10.1.1.31'
 set service dhcp-server shared-network-name SERVERS subnet 10.1.1.0/24 static-mapping delta mac-address '48:21:0b:55:c4:8a'

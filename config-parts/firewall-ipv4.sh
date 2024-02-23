@@ -381,6 +381,11 @@ set firewall ipv4 name local-servers rule 70 action 'accept'
 set firewall ipv4 name local-servers rule 70 description 'Rule: accept_bgp'
 set firewall ipv4 name local-servers rule 70 destination port 'bgp'
 set firewall ipv4 name local-servers rule 70 protocol 'tcp'
+# TODO: This needs to be more specific
+set firewall ipv4 name local-servers rule 80 action 'accept'
+set firewall ipv4 name local-servers rule 80 description 'Rule: accept_pxe'
+set firewall ipv4 name local-servers rule 80 protocol 'udp'
+set firewall ipv4 name local-servers rule 80 log
 set firewall ipv4 name local-servers rule 100 action 'accept'
 set firewall ipv4 name local-servers rule 100 description 'Rule: accept_k8s_api'
 set firewall ipv4 name local-servers rule 100 destination port '6443'
