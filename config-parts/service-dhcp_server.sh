@@ -44,7 +44,7 @@ set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mappin
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garden-wlanthermo ip-address '10.1.3.21'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping garden-wlanthermo mac-address '8c:aa:b5:c1:ce:c8'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tablet ip-address '10.1.3.53'
-set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tablet mac-address 'f4:f3:09:c9:40:33'
+set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tablet mac-address '40:45:da:3b:c4:d6'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-p1reader-esp ip-address '10.1.3.45'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-p1reader-esp mac-address 'c4:5b:be:49:4c:c8'
 set service dhcp-server shared-network-name IOT subnet 10.1.3.0/24 static-mapping hallway-tado-bridge ip-address '10.1.3.23'
