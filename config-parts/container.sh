@@ -158,7 +158,7 @@ set container name onepassword-sync volume data mode 'rw'
 # matchbox
 set container name matchbox arguments '-address=0.0.0.0:80 -log-level=debug'
 set container name matchbox cap-add 'net-bind-service'
-set container name matchbox image 'quay.io/poseidon/matchbox:v0.10.0'
+set container name matchbox image 'quay.io/poseidon/matchbox:v0.11.0'
 set container name matchbox memory '0'
 set container name matchbox network containers address '10.5.0.8'
 set container name matchbox shared-memory '0'
