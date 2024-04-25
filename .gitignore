@@ -6,6 +6,7 @@
 !/.sops.yaml
 !/apply-config.sh
 !/LICENSE
+!/README.md
 
 # VyOS config
 !bootstrap/
